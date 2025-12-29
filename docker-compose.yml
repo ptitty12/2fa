@@ -1,0 +1,7 @@
+services:
+  auto_2fa:
+    build: .
+    container_name: auto_2fa
+    restart: unless-stopped
+    ports:
+      - "0.0.0.0:3213:3213"

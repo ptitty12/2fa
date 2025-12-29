@@ -1,0 +1,2486 @@
+[2025-05-22 09:28:43 -0400] [2821510] [INFO] Starting gunicorn 23.0.0
+[2025-05-22 09:28:43 -0400] [2821510] [INFO] Listening at: http://0.0.0.0:3213 (2821510)
+[2025-05-22 09:28:43 -0400] [2821510] [INFO] Using worker: sync
+[2025-05-22 09:28:43 -0400] [2821511] [INFO] Booting worker with pid: 2821511
+[2025-05-22 09:28:43 -0400] [2821511] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+                ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+                    ^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'code_receiver_app'
+[2025-05-22 09:28:43 -0400] [2821511] [INFO] Worker exiting (pid: 2821511)
+[2025-05-22 09:28:43 -0400] [2821510] [ERROR] Worker (pid:2821511) exited with code 3
+[2025-05-22 09:28:43 -0400] [2821510] [ERROR] Shutting down: Master
+[2025-05-22 09:28:43 -0400] [2821510] [ERROR] Reason: Worker failed to boot.
+[2025-05-22 09:37:53 -0400] [2822112] [INFO] Starting gunicorn 23.0.0
+[2025-05-22 09:37:53 -0400] [2822112] [INFO] Listening at: http://0.0.0.0:3213 (2822112)
+[2025-05-22 09:37:53 -0400] [2822112] [INFO] Using worker: sync
+[2025-05-22 09:37:53 -0400] [2822113] [INFO] Booting worker with pid: 2822113
+[2025-05-22 09:42:55 -0400] [2822112] [INFO] Handling signal: hup
+[2025-05-22 09:42:55 -0400] [2822112] [INFO] Hang up: Master
+[2025-05-22 09:42:55 -0400] [2822112] [ERROR] Worker (pid:2822113) was sent SIGHUP!
+[2025-05-22 09:42:55 -0400] [2822474] [INFO] Booting worker with pid: 2822474
+[2025-05-22 22:14:14 -0400] [2822112] [INFO] Handling signal: term
+[2025-05-22 22:14:14 -0400] [2822474] [INFO] Worker exiting (pid: 2822474)
+[2025-05-22 22:14:14 -0400] [2822112] [INFO] Shutting down: Master
+[2025-05-22 22:14:53 -0400] [2862501] [INFO] Starting gunicorn 23.0.0
+[2025-05-22 22:14:53 -0400] [2862501] [INFO] Listening at: http://0.0.0.0:3213 (2862501)
+[2025-05-22 22:14:53 -0400] [2862501] [INFO] Using worker: sync
+[2025-05-22 22:14:53 -0400] [2862502] [INFO] Booting worker with pid: 2862502
+[2025-05-22 23:10:10 -0400] [2862501] [INFO] Handling signal: hup
+[2025-05-22 23:10:10 -0400] [2862501] [INFO] Hang up: Master
+[2025-05-22 23:10:10 -0400] [2862501] [ERROR] Worker (pid:2862502) was sent SIGHUP!
+[2025-05-22 23:10:10 -0400] [2865248] [INFO] Booting worker with pid: 2865248
+[2025-05-23T13:06:11.687456+00:00] Received code: 202895
+[2025-05-23T13:10:06.190219+00:00] Received code: 676074
+[2025-05-23T13:18:07.509433+00:00] Sent code: 676074 (was received at 2025-05-23T13:10:06.190219+00:00) and cleared it.
+[2025-05-23T13:30:15.476717+00:00] Received code: 676074
+[2025-05-23T13:30:23.309333+00:00] Sent code: 676074 (was received at 2025-05-23T13:30:15.476717+00:00) and cleared it.
+[2025-05-23T13:33:10.211671+00:00] Received code: 676074
+[2025-05-23T13:34:50.469303+00:00] Received code: 676074
+[2025-05-23T13:34:58.429198+00:00] Sent code: 676074 (was received at 2025-05-23T13:34:50.469303+00:00) and cleared it.
+[2025-05-23T13:38:48.260239+00:00] Received code: 676074
+[2025-05-23T13:39:01.981701+00:00] Sent code: 676074 (was received at 2025-05-23T13:38:48.260239+00:00) and cleared it.
+[2025-05-23T13:39:27.184521+00:00] Received code: 676071
+[2025-05-23T13:39:40.230815+00:00] Sent code: 676071 (was received at 2025-05-23T13:39:27.184521+00:00) and cleared it.
+[2025-05-23T13:40:12.714101+00:00] Received code: 676074
+[2025-05-23T13:40:20.387488+00:00] Sent code: 676074 (was received at 2025-05-23T13:40:12.714101+00:00) and cleared it.
+[2025-05-23T13:45:22.446684+00:00] Received code: 112585
+[2025-05-23T13:45:48.161940+00:00] Sent code: 112585 (was received at 2025-05-23T13:45:22.446684+00:00) and cleared it.
+[2025-05-23T18:35:49.359669+00:00] Received code: 653052
+[2025-05-23T18:35:56.561771+00:00] Sent code: 653052 (was received at 2025-05-23T18:35:49.359669+00:00) and cleared it.
+[2025-05-23T18:36:28.415571+00:00] Received code: 305792
+[2025-05-23T18:36:42.552357+00:00] Sent code: 305792 (was received at 2025-05-23T18:36:28.415571+00:00) and cleared it.
+[2025-05-23T18:36:50.587340+00:00] Received code: 676487
+[2025-05-23T18:36:53.706601+00:00] Sent code: 676487 (was received at 2025-05-23T18:36:50.587340+00:00) and cleared it.
+[2025-05-23T18:36:56.887232+00:00] Received code: 284247
+[2025-05-23T18:37:04.362443+00:00] Sent code: 284247 (was received at 2025-05-23T18:36:56.887232+00:00) and cleared it.
+[2025-05-23T21:35:56.669444+00:00] Received code: 456174
+[2025-05-23T21:36:07.426076+00:00] Sent code: 456174 (was received at 2025-05-23T21:35:56.669444+00:00) and cleared it.
+[2025-05-23T21:46:05.313321+00:00] Received code: 456174
+[2025-05-23T21:46:07.276350+00:00] Sent code: 456174 (was received at 2025-05-23T21:46:05.313321+00:00) and cleared it.
+[2025-05-23T21:47:14.133227+00:00] Received code: 456174
+[2025-05-23T21:47:16.616865+00:00] Sent code: 456174 (was received at 2025-05-23T21:47:14.133227+00:00) and cleared it.
+[2025-05-23T21:47:52.815037+00:00] Received code: 376959
+[2025-05-23T21:48:12.209222+00:00] Received code: 167395
+[2025-05-23T21:48:16.372933+00:00] Sent code: 167395 (was received at 2025-05-23T21:48:12.209222+00:00) and cleared it.
+[2025-05-24T21:33:14.519049+00:00] Received code: 656746
+[2025-05-24T21:33:15.961348+00:00] Sent code: 656746 (was received at 2025-05-24T21:33:14.519049+00:00) and cleared it.
+[2025-05-24T21:33:56.006728+00:00] Received code: 544331
+[2025-05-24T21:33:56.388819+00:00] Sent code: 544331 (was received at 2025-05-24T21:33:56.006728+00:00) and cleared it.
+[2025-05-24T21:34:02.720913+00:00] Received code: 594062
+[2025-05-24T21:34:06.444769+00:00] Sent code: 594062 (was received at 2025-05-24T21:34:02.720913+00:00) and cleared it.
+[2025-05-24T22:57:12.128067+00:00] Received code: 547956
+[2025-05-24T22:57:14.529492+00:00] Sent code: 547956 (was received at 2025-05-24T22:57:12.128067+00:00) and cleared it.
+[2025-05-25T01:16:44.179542+00:00] Received code: 595040
+[2025-05-25T01:16:44.205378+00:00] Sent code: 595040 (was received at 2025-05-25T01:16:44.179542+00:00) and cleared it.
+[2025-05-25T02:08:00.444976+00:00] Received code: 246605
+[2025-05-25T02:08:00.606482+00:00] Sent code: 246605 (was received at 2025-05-25T02:08:00.444976+00:00) and cleared it.
+[2025-05-25T02:42:04.711759+00:00] Received code: 704090
+[2025-05-25T02:42:05.394740+00:00] Sent code: 704090 (was received at 2025-05-25T02:42:04.711759+00:00) and cleared it.
+[2025-05-26T16:55:49.482857+00:00] Received code: 289081
+[2025-05-26T16:55:49.617614+00:00] Sent code: 289081 (was received at 2025-05-26T16:55:49.482857+00:00) and cleared it.
+[2025-05-26T16:55:57.324461+00:00] Received code: 621704
+[2025-05-26T16:55:57.749099+00:00] Sent code: 621704 (was received at 2025-05-26T16:55:57.324461+00:00) and cleared it.
+[2025-05-26T16:56:51.397905+00:00] Received code: 638260
+[2025-05-26T16:56:51.910581+00:00] Sent code: 638260 (was received at 2025-05-26T16:56:51.397905+00:00) and cleared it.
+[2025-05-26T23:22:27.747416+00:00] Received code: 622550
+[2025-05-26T23:22:33.899325+00:00] Sent code: 622550 (was received at 2025-05-26T23:22:27.747416+00:00) and cleared it.
+[2025-05-26T23:23:04.431048+00:00] Received code: 609807
+[2025-05-26T23:23:08.895784+00:00] Sent code: 609807 (was received at 2025-05-26T23:23:04.431048+00:00) and cleared it.
+[2025-05-26T23:23:15.583859+00:00] Received code: 132851
+[2025-05-26T23:23:20.861708+00:00] Sent code: 132851 (was received at 2025-05-26T23:23:15.583859+00:00) and cleared it.
+[2025-05-27T00:55:58.066683+00:00] Received code: 556906
+[2025-05-27T12:58:19.619173+00:00] Received code: 444555
+[2025-05-27T12:58:27.032094+00:00] Sent code: 444555 (was received at 2025-05-27T12:58:19.619173+00:00) and cleared it.
+[2025-05-27T13:01:22.162089+00:00] Received code: 414898
+[2025-05-27T13:01:26.316985+00:00] Sent code: 414898 (was received at 2025-05-27T13:01:22.162089+00:00) and cleared it.
+[2025-05-27T18:17:42.901367+00:00] Received code: 802737
+[2025-05-27T18:17:47.553951+00:00] Sent code: 802737 (was received at 2025-05-27T18:17:42.901367+00:00) and cleared it.
+[2025-05-28T00:41:47.894388+00:00] Received code: 437703
+[2025-05-28T00:41:51.411569+00:00] Sent code: 437703 (was received at 2025-05-28T00:41:47.894388+00:00) and cleared it.
+[2025-05-28T12:52:41.452962+00:00] Received code: 282935
+[2025-05-28T12:52:48.381518+00:00] Sent code: 282935 (was received at 2025-05-28T12:52:41.452962+00:00) and cleared it.
+[2025-05-28T12:55:31.125043+00:00] Received code: 337064
+[2025-05-28T12:55:35.291604+00:00] Sent code: 337064 (was received at 2025-05-28T12:55:31.125043+00:00) and cleared it.
+[2025-05-28T13:55:04.133896+00:00] Received code: 708690
+[2025-05-28T13:55:05.508952+00:00] Sent code: 708690 (was received at 2025-05-28T13:55:04.133896+00:00) and cleared it.
+[2025-05-28T13:55:17.145489+00:00] Received code: 458392
+[2025-05-28T13:55:22.900708+00:00] Sent code: 458392 (was received at 2025-05-28T13:55:17.145489+00:00) and cleared it.
+[2025-05-28T15:39:49.048045+00:00] Received code: 320538
+[2025-05-28T15:40:05.883982+00:00] Received code: 419704
+[2025-05-29T12:57:28.886725+00:00] Received code: 480571
+[2025-05-29T12:57:40.954765+00:00] Sent code: 480571 (was received at 2025-05-29T12:57:28.886725+00:00) and cleared it.
+[2025-05-29T13:00:09.736406+00:00] Received code: 150189
+[2025-05-29T13:00:11.194570+00:00] Sent code: 150189 (was received at 2025-05-29T13:00:09.736406+00:00) and cleared it.
+[2025-05-29T16:59:12.734682+00:00] Received code: 354554
+[2025-05-29T16:59:19.204122+00:00] Sent code: 354554 (was received at 2025-05-29T16:59:12.734682+00:00) and cleared it.
+[2025-05-29T19:32:45.591650+00:00] Received code: 516090
+[2025-05-29T19:32:46.019532+00:00] Sent code: 516090 (was received at 2025-05-29T19:32:45.591650+00:00) and cleared it.
+[2025-05-30T13:01:50.105798+00:00] Received code: 689867
+[2025-05-30T13:01:50.280995+00:00] Sent code: 689867 (was received at 2025-05-30T13:01:50.105798+00:00) and cleared it.
+[2025-05-30T13:02:07.690558+00:00] Received code: 256974
+[2025-05-30T13:02:07.923815+00:00] Sent code: 256974 (was received at 2025-05-30T13:02:07.690558+00:00) and cleared it.
+[2025-05-30T13:14:26.416188+00:00] Received code: 807044
+[2025-05-30T13:14:30.591218+00:00] Sent code: 807044 (was received at 2025-05-30T13:14:26.416188+00:00) and cleared it.
+[2025-05-30T18:56:05.627903+00:00] Received code: 683253
+[2025-05-30T18:56:07.364991+00:00] Sent code: 683253 (was received at 2025-05-30T18:56:05.627903+00:00) and cleared it.
+[2025-05-30T23:38:31.885064+00:00] Received code: 109632
+[2025-05-30T23:38:32.569847+00:00] Sent code: 109632 (was received at 2025-05-30T23:38:31.885064+00:00) and cleared it.
+[2025-05-30T23:38:38.667802+00:00] Received code: 144712
+[2025-05-30T23:38:44.089513+00:00] Sent code: 144712 (was received at 2025-05-30T23:38:38.667802+00:00) and cleared it.
+[2025-05-31T20:51:32.936908+00:00] Received code: 352427
+[2025-05-31T20:51:37.529849+00:00] Sent code: 352427 (was received at 2025-05-31T20:51:32.936908+00:00) and cleared it.
+[2025-05-31T20:51:44.051479+00:00] Received code: 399766
+[2025-05-31T20:51:50.514789+00:00] Sent code: 399766 (was received at 2025-05-31T20:51:44.051479+00:00) and cleared it.
+[2025-06-01T19:02:44.901283+00:00] Received code: 606239
+[2025-06-01T19:02:45.945931+00:00] Sent code: 606239 (was received at 2025-06-01T19:02:44.901283+00:00) and cleared it.
+[2025-06-01T19:03:41.423618+00:00] Received code: 581125
+[2025-06-01T19:03:42.602483+00:00] Sent code: 581125 (was received at 2025-06-01T19:03:41.423618+00:00) and cleared it.
+[2025-06-01T19:03:53.517235+00:00] Received code: 218197
+[2025-06-01T19:03:54.040473+00:00] Sent code: 218197 (was received at 2025-06-01T19:03:53.517235+00:00) and cleared it.
+[2025-06-01T21:46:32.072656+00:00] Received code: 222950
+[2025-06-01T21:46:32.097834+00:00] Sent code: 222950 (was received at 2025-06-01T21:46:32.072656+00:00) and cleared it.
+[2025-06-02T01:27:43.826112+00:00] Received code: 639839
+[2025-06-02T01:27:44.749654+00:00] Sent code: 639839 (was received at 2025-06-02T01:27:43.826112+00:00) and cleared it.
+[2025-06-02T13:03:09.463964+00:00] Received code: 832379
+[2025-06-02T13:03:12.471627+00:00] Sent code: 832379 (was received at 2025-06-02T13:03:09.463964+00:00) and cleared it.
+[2025-06-02T13:12:39.350014+00:00] Received code: 232330
+[2025-06-02T13:12:39.952339+00:00] Sent code: 232330 (was received at 2025-06-02T13:12:39.350014+00:00) and cleared it.
+[2025-06-02T19:38:27.309697+00:00] Received code: 500159
+[2025-06-02T19:38:27.721563+00:00] Sent code: 500159 (was received at 2025-06-02T19:38:27.309697+00:00) and cleared it.
+[2025-06-02T20:47:52.375787+00:00] Received code: 417399
+[2025-06-02T20:47:53.409377+00:00] Sent code: 417399 (was received at 2025-06-02T20:47:52.375787+00:00) and cleared it.
+[2025-06-02T20:48:02.652230+00:00] Received code: 141261
+[2025-06-02T20:48:04.316075+00:00] Sent code: 141261 (was received at 2025-06-02T20:48:02.652230+00:00) and cleared it.
+[2025-06-03T13:06:03.482559+00:00] Received code: 670382
+[2025-06-03T13:06:06.790642+00:00] Sent code: 670382 (was received at 2025-06-03T13:06:03.482559+00:00) and cleared it.
+[2025-06-03T13:07:06.086742+00:00] Received code: 402850
+[2025-06-03T13:07:09.933784+00:00] Sent code: 402850 (was received at 2025-06-03T13:07:06.086742+00:00) and cleared it.
+[2025-06-03T16:02:06.258882+00:00] Received code: 211796
+[2025-06-03T16:02:09.162011+00:00] Sent code: 211796 (was received at 2025-06-03T16:02:06.258882+00:00) and cleared it.
+[2025-06-03T22:09:26.102117+00:00] Received code: 671354
+[2025-06-03T22:09:30.631814+00:00] Sent code: 671354 (was received at 2025-06-03T22:09:26.102117+00:00) and cleared it.
+[2025-06-03T23:57:48.678316+00:00] Received code: 350836
+[2025-06-03T23:57:49.340965+00:00] Sent code: 350836 (was received at 2025-06-03T23:57:48.678316+00:00) and cleared it.
+[2025-06-03T23:57:58.452046+00:00] Received code: 169479
+[2025-06-03T23:58:01.869057+00:00] Sent code: 169479 (was received at 2025-06-03T23:57:58.452046+00:00) and cleared it.
+[2025-06-04T01:13:34.769765+00:00] Received code: 332333
+[2025-06-04T01:13:35.923651+00:00] Sent code: 332333 (was received at 2025-06-04T01:13:34.769765+00:00) and cleared it.
+[2025-06-04T01:13:41.697667+00:00] Received code: 174745
+[2025-06-04T01:13:46.129618+00:00] Sent code: 174745 (was received at 2025-06-04T01:13:41.697667+00:00) and cleared it.
+[2025-06-04T12:59:29.017408+00:00] Received code: 626531
+[2025-06-04T12:59:29.732473+00:00] Sent code: 626531 (was received at 2025-06-04T12:59:29.017408+00:00) and cleared it.
+[2025-06-04T13:28:42.080392+00:00] Received code: 169041
+[2025-06-04T13:28:44.347983+00:00] Sent code: 169041 (was received at 2025-06-04T13:28:42.080392+00:00) and cleared it.
+[2025-06-04T16:21:15.606313+00:00] Received code: 529529
+[2025-06-04T16:22:43.694464+00:00] Received code: 577245
+[2025-06-04T18:32:39.241176+00:00] Sent code: 577245 (was received at 2025-06-04T16:22:43.694464+00:00) and cleared it.
+[2025-06-04T18:32:41.270853+00:00] Received code: 127265
+[2025-06-04T20:45:45.477395+00:00] Received code: 405382
+[2025-06-04T20:45:48.955891+00:00] Sent code: 405382 (was received at 2025-06-04T20:45:45.477395+00:00) and cleared it.
+[2025-06-05T00:12:58.291733+00:00] Received code: 677018
+[2025-06-05T00:13:03.379606+00:00] Sent code: 677018 (was received at 2025-06-05T00:12:58.291733+00:00) and cleared it.
+[2025-06-05T09:24:58.161047+00:00] Received code: 158484
+[2025-06-05T09:24:59.451362+00:00] Sent code: 158484 (was received at 2025-06-05T09:24:58.161047+00:00) and cleared it.
+[2025-06-05T09:25:07.589662+00:00] Received code: 465416
+[2025-06-05T09:25:08.360648+00:00] Sent code: 465416 (was received at 2025-06-05T09:25:07.589662+00:00) and cleared it.
+[2025-06-05T15:02:36.240166+00:00] Received code: 449112
+[2025-06-05T15:02:36.965223+00:00] Sent code: 449112 (was received at 2025-06-05T15:02:36.240166+00:00) and cleared it.
+[2025-06-05T16:23:06.671392+00:00] Received code: 184317
+[2025-06-05T16:23:40.390399+00:00] Sent code: 184317 (was received at 2025-06-05T16:23:06.671392+00:00) and cleared it.
+[2025-06-05T17:36:46.515333+00:00] Received code: 314214
+[2025-06-05T17:36:46.785801+00:00] Sent code: 314214 (was received at 2025-06-05T17:36:46.515333+00:00) and cleared it.
+[2025-06-05T17:57:45.649463+00:00] Received code: 264913
+[2025-06-06T03:33:54.554658+00:00] Received code: 679716
+[2025-06-06T13:57:09.764796+00:00] Sent code: 679716 (was received at 2025-06-06T03:33:54.554658+00:00) and cleared it.
+[2025-06-06T13:57:10.948118+00:00] Received code: 389902
+[2025-06-06T13:57:22.684933+00:00] Sent code: 389902 (was received at 2025-06-06T13:57:10.948118+00:00) and cleared it.
+[2025-06-06T13:58:26.547804+00:00] Received code: 567024
+[2025-06-06T13:58:30.690103+00:00] Sent code: 567024 (was received at 2025-06-06T13:58:26.547804+00:00) and cleared it.
+[2025-06-09T12:59:12.470212+00:00] Received code: 224256
+[2025-06-09T12:59:14.728696+00:00] Sent code: 224256 (was received at 2025-06-09T12:59:12.470212+00:00) and cleared it.
+[2025-06-09T13:00:31.619729+00:00] Received code: 442969
+[2025-06-09T13:00:34.960751+00:00] Sent code: 442969 (was received at 2025-06-09T13:00:31.619729+00:00) and cleared it.
+[2025-06-09T13:00:41.939543+00:00] Received code: 374074
+[2025-06-09T13:00:57.746189+00:00] Sent code: 374074 (was received at 2025-06-09T13:00:41.939543+00:00) and cleared it.
+[2025-06-09T23:11:02.921846+00:00] Received code: 222279
+[2025-06-09T23:11:25.395875+00:00] Sent code: 222279 (was received at 2025-06-09T23:11:02.921846+00:00) and cleared it.
+[2025-06-10T01:47:46.292791+00:00] Received code: 433498
+[2025-06-10T01:47:47.159293+00:00] Sent code: 433498 (was received at 2025-06-10T01:47:46.292791+00:00) and cleared it.
+[2025-06-10T13:02:04.760217+00:00] Received code: 361334
+[2025-06-10T13:02:20.931367+00:00] Sent code: 361334 (was received at 2025-06-10T13:02:04.760217+00:00) and cleared it.
+[2025-06-10T13:15:31.874556+00:00] Received code: 358564
+[2025-06-10T13:15:42.880023+00:00] Sent code: 358564 (was received at 2025-06-10T13:15:31.874556+00:00) and cleared it.
+[2025-06-10T15:33:17.111570+00:00] Received code: 222543
+[2025-06-10T15:33:18.137025+00:00] Sent code: 222543 (was received at 2025-06-10T15:33:17.111570+00:00) and cleared it.
+[2025-06-10T16:36:03.799843+00:00] Received code: 124159
+[2025-06-10T16:36:04.397540+00:00] Sent code: 124159 (was received at 2025-06-10T16:36:03.799843+00:00) and cleared it.
+[2025-06-10T19:00:37.215755+00:00] Received code: 153165
+[2025-06-10T19:00:41.330072+00:00] Sent code: 153165 (was received at 2025-06-10T19:00:37.215755+00:00) and cleared it.
+[2025-06-10T20:41:13.257685+00:00] Received code: 290676
+[2025-06-13 23:19:23 -0400] [2865248] [WARNING] Invalid request from ip=185.156.73.154: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2025-06-18 20:22:01 -0400] [2865248] [WARNING] Invalid request from ip=45.140.17.107: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2025-06-19 01:49:34 -0400] [2865248] [WARNING] Invalid request from ip=45.140.17.107: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2025-06-23 06:49:13 -0400] [2865248] [WARNING] Invalid request from ip=185.196.220.247: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2025-06-10T20:41:14.016302+00:00] Sent code: 290676 (was received at 2025-06-10T20:41:13.257685+00:00) and cleared it.
+[2025-06-11T00:29:07.235832+00:00] Received code: 227694
+[2025-06-11T00:29:09.020028+00:00] Sent code: 227694 (was received at 2025-06-11T00:29:07.235832+00:00) and cleared it.
+[2025-06-11T12:18:51.383047+00:00] Received code: 680558
+[2025-06-11T12:18:58.900550+00:00] Sent code: 680558 (was received at 2025-06-11T12:18:51.383047+00:00) and cleared it.
+[2025-06-11T12:23:06.474292+00:00] Received code: 896662
+[2025-06-11T12:23:10.278154+00:00] Sent code: 896662 (was received at 2025-06-11T12:23:06.474292+00:00) and cleared it.
+[2025-06-11T14:45:36.566377+00:00] Received code: 576501
+[2025-06-11T14:45:38.846130+00:00] Sent code: 576501 (was received at 2025-06-11T14:45:36.566377+00:00) and cleared it.
+[2025-06-11T21:49:59.997379+00:00] Received code: 419216
+[2025-06-11T21:50:06.537097+00:00] Sent code: 419216 (was received at 2025-06-11T21:49:59.997379+00:00) and cleared it.
+[2025-06-12T12:07:09.583978+00:00] Received code: 312787
+[2025-06-12T12:07:44.790141+00:00] Received code: 381399
+[2025-06-12T12:21:52.852061+00:00] Received code: 677891
+[2025-06-12T12:21:53.468812+00:00] Sent code: 677891 (was received at 2025-06-12T12:21:52.852061+00:00) and cleared it.
+[2025-06-13T13:01:37.719663+00:00] Received code: 247112
+[2025-06-13T13:01:44.707441+00:00] Sent code: 247112 (was received at 2025-06-13T13:01:37.719663+00:00) and cleared it.
+[2025-06-13T13:13:50.891176+00:00] Received code: 139798
+[2025-06-13T13:13:55.164598+00:00] Sent code: 139798 (was received at 2025-06-13T13:13:50.891176+00:00) and cleared it.
+[2025-06-15T17:50:03.636415+00:00] Received code: 552525
+[2025-06-15T17:50:04.360597+00:00] Sent code: 552525 (was received at 2025-06-15T17:50:03.636415+00:00) and cleared it.
+[2025-06-15T17:54:07.015457+00:00] Received code: 477828
+[2025-06-16T13:06:15.039490+00:00] Sent code: 477828 (was received at 2025-06-15T17:54:07.015457+00:00) and cleared it.
+[2025-06-16T13:06:15.805195+00:00] Received code: 569483
+[2025-06-16T13:06:21.508350+00:00] Sent code: 569483 (was received at 2025-06-16T13:06:15.805195+00:00) and cleared it.
+[2025-06-16T13:08:59.870358+00:00] Received code: 587544
+[2025-06-16T13:09:00.237559+00:00] Sent code: 587544 (was received at 2025-06-16T13:08:59.870358+00:00) and cleared it.
+[2025-06-16T13:09:07.492956+00:00] Received code: 394512
+[2025-06-16T13:09:09.867346+00:00] Sent code: 394512 (was received at 2025-06-16T13:09:07.492956+00:00) and cleared it.
+[2025-06-17T12:53:50.290120+00:00] Received code: 584001
+[2025-06-17T12:53:52.594249+00:00] Sent code: 584001 (was received at 2025-06-17T12:53:50.290120+00:00) and cleared it.
+[2025-06-17T13:06:52.549246+00:00] Received code: 269552
+[2025-06-17T13:06:52.887581+00:00] Sent code: 269552 (was received at 2025-06-17T13:06:52.549246+00:00) and cleared it.
+[2025-06-17T18:32:58.876751+00:00] Received code: 236148
+[2025-06-17T18:33:03.556765+00:00] Sent code: 236148 (was received at 2025-06-17T18:32:58.876751+00:00) and cleared it.
+[2025-06-17T18:33:12.490317+00:00] Received code: 422477
+[2025-06-17T18:33:17.586639+00:00] Sent code: 422477 (was received at 2025-06-17T18:33:12.490317+00:00) and cleared it.
+[2025-06-17T19:27:47.893376+00:00] Received code: 260879
+[2025-06-17T19:27:50.899059+00:00] Sent code: 260879 (was received at 2025-06-17T19:27:47.893376+00:00) and cleared it.
+[2025-06-18T13:07:18.626711+00:00] Received code: 271253
+[2025-06-18T13:07:19.340454+00:00] Sent code: 271253 (was received at 2025-06-18T13:07:18.626711+00:00) and cleared it.
+[2025-06-18T13:07:26.271195+00:00] Received code: 310610
+[2025-06-18T13:07:31.903586+00:00] Sent code: 310610 (was received at 2025-06-18T13:07:26.271195+00:00) and cleared it.
+[2025-06-18T13:42:07.229403+00:00] Received code: 860297
+[2025-06-18T13:42:09.834912+00:00] Sent code: 860297 (was received at 2025-06-18T13:42:07.229403+00:00) and cleared it.
+[2025-06-18T16:21:06.055549+00:00] Received code: 463792
+[2025-06-18T19:13:37.306471+00:00] Sent code: 463792 (was received at 2025-06-18T16:21:06.055549+00:00) and cleared it.
+[2025-06-18T19:13:39.512987+00:00] Received code: 547153
+[2025-06-18T19:13:45.541675+00:00] Sent code: 547153 (was received at 2025-06-18T19:13:39.512987+00:00) and cleared it.
+[2025-06-18T19:15:11.240474+00:00] Received code: 772510
+[2025-06-18T19:15:14.548541+00:00] Sent code: 772510 (was received at 2025-06-18T19:15:11.240474+00:00) and cleared it.
+[2025-06-18T23:48:04.717699+00:00] Received code: 198912
+[2025-06-18T23:48:07.376393+00:00] Sent code: 198912 (was received at 2025-06-18T23:48:04.717699+00:00) and cleared it.
+[2025-06-19T13:00:35.557495+00:00] Received code: 243620
+[2025-06-19T13:00:36.259624+00:00] Sent code: 243620 (was received at 2025-06-19T13:00:35.557495+00:00) and cleared it.
+[2025-06-19T13:13:10.116195+00:00] Received code: 158238
+[2025-06-19T13:13:11.477153+00:00] Sent code: 158238 (was received at 2025-06-19T13:13:10.116195+00:00) and cleared it.
+[2025-06-19T15:14:21.079813+00:00] Received code: 426279
+[2025-06-19T15:14:24.424551+00:00] Sent code: 426279 (was received at 2025-06-19T15:14:21.079813+00:00) and cleared it.
+[2025-06-19T21:33:29.418136+00:00] Received code: 544027
+[2025-06-19T21:33:29.710921+00:00] Sent code: 544027 (was received at 2025-06-19T21:33:29.418136+00:00) and cleared it.
+[2025-06-20T13:06:07.766723+00:00] Received code: 651339
+[2025-06-20T13:06:16.007991+00:00] Sent code: 651339 (was received at 2025-06-20T13:06:07.766723+00:00) and cleared it.
+[2025-06-20T13:07:24.036330+00:00] Received code: 121784
+[2025-06-20T13:07:28.565915+00:00] Sent code: 121784 (was received at 2025-06-20T13:07:24.036330+00:00) and cleared it.
+[2025-06-20T13:07:36.429044+00:00] Received code: 391326
+[2025-06-20T13:07:41.343664+00:00] Sent code: 391326 (was received at 2025-06-20T13:07:36.429044+00:00) and cleared it.
+[2025-06-20T14:12:27.897680+00:00] Received code: 317290
+[2025-06-20T14:12:31.002933+00:00] Sent code: 317290 (was received at 2025-06-20T14:12:27.897680+00:00) and cleared it.
+[2025-06-20T16:21:48.170854+00:00] Received code: 223282
+[2025-06-20T21:04:37.229511+00:00] Received code: 379478
+[2025-06-20T21:28:48.689929+00:00] Received code: 124755
+[2025-06-21T18:47:50.090324+00:00] Received code: 377742
+[2025-06-21T18:48:41.011093+00:00] Received code: 304516
+[2025-06-21T18:48:43.137534+00:00] Received code: 697295
+[2025-06-21T18:48:49.799742+00:00] Sent code: 697295 (was received at 2025-06-21T18:48:43.137534+00:00) and cleared it.
+[2025-06-21T22:52:47.213828+00:00] Received code: 352440
+[2025-06-21T22:52:47.293668+00:00] Sent code: 352440 (was received at 2025-06-21T22:52:47.213828+00:00) and cleared it.
+[2025-06-21T22:52:54.087683+00:00] Received code: 603194
+[2025-06-21T22:52:56.643682+00:00] Sent code: 603194 (was received at 2025-06-21T22:52:54.087683+00:00) and cleared it.
+[2025-06-22T01:50:01.960585+00:00] Received code: 594244
+[2025-06-22T01:50:06.026102+00:00] Sent code: 594244 (was received at 2025-06-22T01:50:01.960585+00:00) and cleared it.
+[2025-06-22T01:50:12.064502+00:00] Received code: 436253
+[2025-06-22T01:50:17.452582+00:00] Sent code: 436253 (was received at 2025-06-22T01:50:12.064502+00:00) and cleared it.
+[2025-06-22T02:26:59.728499+00:00] Received code: 487686
+[2025-06-22T02:26:59.884540+00:00] Sent code: 487686 (was received at 2025-06-22T02:26:59.728499+00:00) and cleared it.
+[2025-06-22T19:07:45.634100+00:00] Received code: 632784
+[2025-06-22T19:07:46.107209+00:00] Sent code: 632784 (was received at 2025-06-22T19:07:45.634100+00:00) and cleared it.
+[2025-06-22T19:07:57.075113+00:00] Received code: 346178
+[2025-06-22T19:07:58.195646+00:00] Sent code: 346178 (was received at 2025-06-22T19:07:57.075113+00:00) and cleared it.
+[2025-06-22T23:24:56.107243+00:00] Received code: 360996
+[2025-06-22T23:24:56.671667+00:00] Sent code: 360996 (was received at 2025-06-22T23:24:56.107243+00:00) and cleared it.
+[2025-06-23T13:02:19.330689+00:00] Received code: 501565
+[2025-06-23T13:02:19.963328+00:00] Sent code: 501565 (was received at 2025-06-23T13:02:19.330689+00:00) and cleared it.
+[2025-06-23T13:02:28.862688+00:00] Received code: 882286
+[2025-07-03 16:31:51 -0400] [2862501] [CRITICAL] WORKER TIMEOUT (pid:2865248)
+[2025-07-03 16:31:51 -0400] [2865248] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-07-03 16:31:51 -0400] [2865248] [INFO] Worker exiting (pid: 2865248)
+[2025-06-23T13:02:32.657314+00:00] Sent code: 882286 (was received at 2025-06-23T13:02:28.862688+00:00) and cleared it.
+[2025-06-23T14:59:01.396442+00:00] Received code: 559154
+[2025-06-23T14:59:03.080543+00:00] Sent code: 559154 (was received at 2025-06-23T14:59:01.396442+00:00) and cleared it.
+[2025-06-23T18:54:33.981884+00:00] Received code: 664875
+[2025-06-23T18:54:37.331881+00:00] Sent code: 664875 (was received at 2025-06-23T18:54:33.981884+00:00) and cleared it.
+[2025-06-23T20:26:29.411558+00:00] Received code: 704093
+[2025-06-23T20:26:32.519947+00:00] Sent code: 704093 (was received at 2025-06-23T20:26:29.411558+00:00) and cleared it.
+[2025-06-23T23:25:16.931877+00:00] Received code: 198251
+[2025-06-23T23:25:21.578042+00:00] Sent code: 198251 (was received at 2025-06-23T23:25:16.931877+00:00) and cleared it.
+[2025-06-23T23:27:58.226186+00:00] Received code: 329144
+[2025-06-23T23:28:02.254800+00:00] Sent code: 329144 (was received at 2025-06-23T23:27:58.226186+00:00) and cleared it.
+[2025-06-24T01:16:21.321599+00:00] Received code: 212545
+[2025-06-24T01:16:25.289051+00:00] Sent code: 212545 (was received at 2025-06-24T01:16:21.321599+00:00) and cleared it.
+[2025-06-24T13:06:31.212325+00:00] Received code: 127031
+[2025-06-24T13:06:31.360405+00:00] Sent code: 127031 (was received at 2025-06-24T13:06:31.212325+00:00) and cleared it.
+[2025-06-24T14:21:39.329425+00:00] Received code: 126225
+[2025-06-24T14:21:41.922325+00:00] Sent code: 126225 (was received at 2025-06-24T14:21:39.329425+00:00) and cleared it.
+[2025-06-24T17:02:22.927951+00:00] Received code: 169923
+[2025-06-24T17:02:23.195038+00:00] Sent code: 169923 (was received at 2025-06-24T17:02:22.927951+00:00) and cleared it.
+[2025-06-25T12:55:48.524192+00:00] Received code: 407896
+[2025-06-25T12:55:48.606822+00:00] Sent code: 407896 (was received at 2025-06-25T12:55:48.524192+00:00) and cleared it.
+[2025-06-25T12:55:59.085022+00:00] Received code: 719780
+[2025-06-25T12:56:00.211939+00:00] Sent code: 719780 (was received at 2025-06-25T12:55:59.085022+00:00) and cleared it.
+[2025-06-25T12:56:36.225919+00:00] Received code: 205543
+[2025-06-25T12:56:50.327449+00:00] Sent code: 205543 (was received at 2025-06-25T12:56:36.225919+00:00) and cleared it.
+[2025-06-25T17:47:25.241918+00:00] Received code: 695129
+[2025-06-25T17:47:27.020208+00:00] Sent code: 695129 (was received at 2025-06-25T17:47:25.241918+00:00) and cleared it.
+[2025-06-26T12:56:14.053953+00:00] Received code: 515385
+[2025-06-26T12:56:15.670869+00:00] Sent code: 515385 (was received at 2025-06-26T12:56:14.053953+00:00) and cleared it.
+[2025-06-26T12:56:24.395122+00:00] Received code: 415183
+[2025-06-26T12:56:48.102507+00:00] Sent code: 415183 (was received at 2025-06-26T12:56:24.395122+00:00) and cleared it.
+[2025-06-26T13:00:41.425630+00:00] Received code: 536828
+[2025-06-26T13:00:43.604818+00:00] Sent code: 536828 (was received at 2025-06-26T13:00:41.425630+00:00) and cleared it.
+[2025-06-26T19:35:34.239565+00:00] Received code: 302152
+[2025-06-26T19:35:34.513200+00:00] Sent code: 302152 (was received at 2025-06-26T19:35:34.239565+00:00) and cleared it.
+[2025-06-27T13:21:04.550022+00:00] Received code: 477153
+[2025-06-27T13:21:05.360167+00:00] Sent code: 477153 (was received at 2025-06-27T13:21:04.550022+00:00) and cleared it.
+[2025-06-27T13:26:16.061963+00:00] Received code: 103843
+[2025-06-27T13:26:20.111592+00:00] Sent code: 103843 (was received at 2025-06-27T13:26:16.061963+00:00) and cleared it.
+[2025-06-27T16:37:17.916937+00:00] Received code: 214280
+[2025-06-27T16:37:18.903159+00:00] Sent code: 214280 (was received at 2025-06-27T16:37:17.916937+00:00) and cleared it.
+[2025-06-27T19:46:27.490823+00:00] Received code: 251726
+[2025-06-27T19:46:28.888116+00:00] Sent code: 251726 (was received at 2025-06-27T19:46:27.490823+00:00) and cleared it.
+[2025-06-30T13:01:52.845066+00:00] Received code: 232971
+[2025-06-30T13:02:14.370239+00:00] Sent code: 232971 (was received at 2025-06-30T13:01:52.845066+00:00) and cleared it.
+[2025-06-30T13:05:08.763201+00:00] Received code: 158925
+[2025-06-30T13:05:14.367375+00:00] Sent code: 158925 (was received at 2025-06-30T13:05:08.763201+00:00) and cleared it.
+[2025-06-30T13:34:22.998734+00:00] Received code: 717433
+[2025-06-30T17:48:04.589837+00:00] Received code: 169471
+[2025-06-30T17:48:07.492901+00:00] Sent code: 169471 (was received at 2025-06-30T17:48:04.589837+00:00) and cleared it.
+[2025-07-01T13:03:05.328207+00:00] Received code: 164130
+[2025-07-01T13:03:06.491391+00:00] Sent code: 164130 (was received at 2025-07-01T13:03:05.328207+00:00) and cleared it.
+[2025-07-01T13:04:07.986236+00:00] Received code: 416154
+[2025-07-01T13:04:10.153655+00:00] Sent code: 416154 (was received at 2025-07-01T13:04:07.986236+00:00) and cleared it.
+[2025-07-01T13:04:19.220741+00:00] Received code: 718274
+[2025-07-01T13:04:23.313252+00:00] Sent code: 718274 (was received at 2025-07-01T13:04:19.220741+00:00) and cleared it.
+[2025-07-01T17:42:38.514572+00:00] Received code: 367201
+[2025-07-01T17:42:39.255528+00:00] Sent code: 367201 (was received at 2025-07-01T17:42:38.514572+00:00) and cleared it.
+[2025-07-02T13:06:30.618552+00:00] Received code: 668492
+[2025-07-02T13:06:34.825538+00:00] Sent code: 668492 (was received at 2025-07-02T13:06:30.618552+00:00) and cleared it.
+[2025-07-02T13:06:41.110795+00:00] Received code: 450357
+[2025-07-02T13:06:47.473784+00:00] Sent code: 450357 (was received at 2025-07-02T13:06:41.110795+00:00) and cleared it.
+[2025-07-02T13:19:59.102766+00:00] Received code: 613341
+[2025-07-02T13:20:02.568338+00:00] Sent code: 613341 (was received at 2025-07-02T13:19:59.102766+00:00) and cleared it.
+[2025-07-02T17:02:50.806458+00:00] Received code: 248450
+[2025-07-02T17:02:50.971336+00:00] Sent code: 248450 (was received at 2025-07-02T17:02:50.806458+00:00) and cleared it.
+[2025-07-03T00:32:12.272945+00:00] Received code: 642733
+[2025-07-03T00:32:17.346351+00:00] Sent code: 642733 (was received at 2025-07-03T00:32:12.272945+00:00) and cleared it.
+[2025-07-03T02:06:09.270830+00:00] Received code: 567512
+[2025-07-03T02:06:13.702355+00:00] Sent code: 567512 (was received at 2025-07-03T02:06:09.270830+00:00) and cleared it.
+[2025-07-03 16:31:51 -0400] [1814681] [INFO] Booting worker with pid: 1814681
+[2025-07-04 03:08:09 -0400] [2862501] [CRITICAL] WORKER TIMEOUT (pid:1814681)
+[2025-07-04 03:08:09 -0400] [1814681] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-07-04 03:08:09 -0400] [1814681] [INFO] Worker exiting (pid: 1814681)
+[2025-07-04 03:08:09 -0400] [1847189] [INFO] Booting worker with pid: 1847189
+[2025-07-06 00:27:49 -0400] [2862501] [CRITICAL] WORKER TIMEOUT (pid:1847189)
+[2025-07-06 00:27:49 -0400] [1847189] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-07-06 00:27:49 -0400] [1847189] [INFO] Worker exiting (pid: 1847189)
+[2025-07-06 00:27:49 -0400] [1987612] [INFO] Booting worker with pid: 1987612
+[2025-07-06T22:35:51.302611+00:00] Received code: 616596
+[2025-07-06T22:35:59.352300+00:00] Sent code: 616596 (was received at 2025-07-06T22:35:51.302611+00:00) and cleared it.
+[2025-07-06T22:36:07.328211+00:00] Received code: 117202
+[2025-07-06T22:36:13.728088+00:00] Sent code: 117202 (was received at 2025-07-06T22:36:07.328211+00:00) and cleared it.
+[2025-07-07T00:22:08.085581+00:00] Received code: 166205
+[2025-07-07T00:22:09.279476+00:00] Sent code: 166205 (was received at 2025-07-07T00:22:08.085581+00:00) and cleared it.
+[2025-07-07T03:09:36.660082+00:00] Received code: 543103
+[2025-07-07T03:09:47.514651+00:00] Sent code: 543103 (was received at 2025-07-07T03:09:36.660082+00:00) and cleared it.
+[2025-07-08T13:02:31.445417+00:00] Received code: 161057
+[2025-07-08T13:02:32.784749+00:00] Sent code: 161057 (was received at 2025-07-08T13:02:31.445417+00:00) and cleared it.
+[2025-07-08T13:02:38.894045+00:00] Received code: 138936
+[2025-07-08T13:02:45.832520+00:00] Sent code: 138936 (was received at 2025-07-08T13:02:38.894045+00:00) and cleared it.
+[2025-07-08T13:20:09.412418+00:00] Received code: 573374
+[2025-07-08T13:20:12.104591+00:00] Sent code: 573374 (was received at 2025-07-08T13:20:09.412418+00:00) and cleared it.
+[2025-07-08T15:07:47.769809+00:00] Received code: 430142
+[2025-07-08T15:07:50.245304+00:00] Sent code: 430142 (was received at 2025-07-08T15:07:47.769809+00:00) and cleared it.
+[2025-07-08T19:18:07.163212+00:00] Received code: 642425
+[2025-07-08T19:18:11.413096+00:00] Sent code: 642425 (was received at 2025-07-08T19:18:07.163212+00:00) and cleared it.
+[2025-07-09T03:13:29.147521+00:00] Received code: 590087
+[2025-07-09T03:13:33.346154+00:00] Sent code: 590087 (was received at 2025-07-09T03:13:29.147521+00:00) and cleared it.
+[2025-07-09T12:56:06.384972+00:00] Received code: 433344
+[2025-07-09T12:56:11.031526+00:00] Sent code: 433344 (was received at 2025-07-09T12:56:06.384972+00:00) and cleared it.
+[2025-07-09T13:01:56.537402+00:00] Received code: 178725
+[2025-07-09T13:12:06.106948+00:00] Sent code: 178725 (was received at 2025-07-09T13:01:56.537402+00:00) and cleared it.
+[2025-07-09T17:20:45.657178+00:00] Received code: 910701
+[2025-07-09T17:20:47.881967+00:00] Sent code: 910701 (was received at 2025-07-09T17:20:45.657178+00:00) and cleared it.
+[2025-07-11T13:13:30.918237+00:00] Received code: 631830
+[2025-07-11T13:13:33.409169+00:00] Sent code: 631830 (was received at 2025-07-11T13:13:30.918237+00:00) and cleared it.
+[2025-07-11T13:43:05.946555+00:00] Received code: 282718
+[2025-07-11T13:43:13.478427+00:00] Sent code: 282718 (was received at 2025-07-11T13:43:05.946555+00:00) and cleared it.
+[2025-07-11T13:43:20.335237+00:00] Received code: 496772
+[2025-07-11T13:43:25.097903+00:00] Sent code: 496772 (was received at 2025-07-11T13:43:20.335237+00:00) and cleared it.
+[2025-07-14T00:27:24.021116+00:00] Received code: 330122
+[2025-07-14T00:27:30.316384+00:00] Sent code: 330122 (was received at 2025-07-14T00:27:24.021116+00:00) and cleared it.
+[2025-07-14T00:27:37.366216+00:00] Received code: 302698
+[2025-07-14T00:27:37.762174+00:00] Sent code: 302698 (was received at 2025-07-14T00:27:37.366216+00:00) and cleared it.
+[2025-07-14T01:26:58.561546+00:00] Received code: 446507
+[2025-07-14T01:26:59.391570+00:00] Sent code: 446507 (was received at 2025-07-14T01:26:58.561546+00:00) and cleared it.
+[2025-07-14T13:00:25.666818+00:00] Received code: 691875
+[2025-07-14T13:00:43.394107+00:00] Sent code: 691875 (was received at 2025-07-14T13:00:25.666818+00:00) and cleared it.
+[2025-07-14T13:37:38.325635+00:00] Received code: 606958
+[2025-07-14T13:37:39.519569+00:00] Sent code: 606958 (was received at 2025-07-14T13:37:38.325635+00:00) and cleared it.
+[2025-07-14T19:51:40.052082+00:00] Received code: 267792
+[2025-07-14T19:51:43.649410+00:00] Sent code: 267792 (was received at 2025-07-14T19:51:40.052082+00:00) and cleared it.
+[2025-07-15T12:59:16.791258+00:00] Received code: 527346
+[2025-07-15T12:59:16.802160+00:00] Sent code: 527346 (was received at 2025-07-15T12:59:16.791258+00:00) and cleared it.
+[2025-07-15T13:02:36.368400+00:00] Received code: 650331
+[2025-07-15T13:02:40.438545+00:00] Sent code: 650331 (was received at 2025-07-15T13:02:36.368400+00:00) and cleared it.
+[2025-07-16T12:54:30.004163+00:00] Received code: 573340
+[2025-07-16T12:54:32.931735+00:00] Sent code: 573340 (was received at 2025-07-16T12:54:30.004163+00:00) and cleared it.
+[2025-07-16T13:00:28.802706+00:00] Received code: 648181
+[2025-07-16T13:00:30.650354+00:00] Sent code: 648181 (was received at 2025-07-16T13:00:28.802706+00:00) and cleared it.
+[2025-07-16T13:21:41.181484+00:00] Received code: 332853
+[2025-07-16T13:21:45.997152+00:00] Sent code: 332853 (was received at 2025-07-16T13:21:41.181484+00:00) and cleared it.
+[2025-07-17T13:04:16.684621+00:00] Received code: 150475
+[2025-07-17T13:04:20.991785+00:00] Sent code: 150475 (was received at 2025-07-17T13:04:16.684621+00:00) and cleared it.
+[2025-07-17T13:09:41.439434+00:00] Received code: 117061
+[2025-07-17T13:09:56.278471+00:00] Sent code: 117061 (was received at 2025-07-17T13:09:41.439434+00:00) and cleared it.
+[2025-07-17T18:31:02.993154+00:00] Received code: 528096
+[2025-07-17T18:31:10.978299+00:00] Sent code: 528096 (was received at 2025-07-17T18:31:02.993154+00:00) and cleared it.
+[2025-07-17T18:31:22.922121+00:00] Received code: 178119
+[2025-07-17T18:31:27.878393+00:00] Sent code: 178119 (was received at 2025-07-17T18:31:22.922121+00:00) and cleared it.
+[2025-07-18T13:02:14.917065+00:00] Received code: 396941
+[2025-07-18T13:02:23.565547+00:00] Sent code: 396941 (was received at 2025-07-18T13:02:14.917065+00:00) and cleared it.
+[2025-07-18T13:02:29.443683+00:00] Received code: 228905
+[2025-07-18T13:02:35.853111+00:00] Sent code: 228905 (was received at 2025-07-18T13:02:29.443683+00:00) and cleared it.
+[2025-07-18T14:19:02.600370+00:00] Received code: 271461
+[2025-07-18T14:19:12.065198+00:00] Sent code: 271461 (was received at 2025-07-18T14:19:02.600370+00:00) and cleared it.
+[2025-07-21T13:11:35.547892+00:00] Received code: 432202
+[2025-07-21T13:11:36.682628+00:00] Sent code: 432202 (was received at 2025-07-21T13:11:35.547892+00:00) and cleared it.
+[2025-07-21T13:34:42.674343+00:00] Received code: 918094
+[2025-07-21T13:35:03.244863+00:00] Sent code: 918094 (was received at 2025-07-21T13:34:42.674343+00:00) and cleared it.
+[2025-07-22T13:01:32.400838+00:00] Received code: 304943
+[2025-07-22T13:01:37.036749+00:00] Sent code: 304943 (was received at 2025-07-22T13:01:32.400838+00:00) and cleared it.
+[2025-07-22T13:01:44.106154+00:00] Received code: 500525
+[2025-07-22T13:01:48.781557+00:00] Sent code: 500525 (was received at 2025-07-22T13:01:44.106154+00:00) and cleared it.
+[2025-07-22T13:29:47.074286+00:00] Received code: 677744
+[2025-07-22T13:29:50.281636+00:00] Sent code: 677744 (was received at 2025-07-22T13:29:47.074286+00:00) and cleared it.
+[2025-07-23T00:53:35.708972+00:00] Received code: 592384
+[2025-07-23T00:53:43.000713+00:00] Sent code: 592384 (was received at 2025-07-23T00:53:35.708972+00:00) and cleared it.
+[2025-07-23T12:48:22.460049+00:00] Received code: 104315
+[2025-07-23T12:48:28.409630+00:00] Sent code: 104315 (was received at 2025-07-23T12:48:22.460049+00:00) and cleared it.
+[2025-07-23T12:48:44.137665+00:00] Received code: 167423
+[2025-07-23T12:48:53.405587+00:00] Sent code: 167423 (was received at 2025-07-23T12:48:44.137665+00:00) and cleared it.
+[2025-07-23T15:07:50.420482+00:00] Received code: 376586
+[2025-07-23T15:07:52.971439+00:00] Sent code: 376586 (was received at 2025-07-23T15:07:50.420482+00:00) and cleared it.
+[2025-07-24T12:58:22.774192+00:00] Received code: 572884
+[2025-07-24T12:59:00.588854+00:00] Received code: 125174
+[2025-07-24T12:59:27.304356+00:00] Received code: 630368
+[2025-07-24T20:31:21.076187+00:00] Received code: 589022
+[2025-07-25T13:30:05.205099+00:00] Received code: 711719
+[2025-07-25T13:30:09.459723+00:00] Sent code: 711719 (was received at 2025-07-25T13:30:05.205099+00:00) and cleared it.
+[2025-07-25T13:31:00.538604+00:00] Received code: 441623
+[2025-07-25T13:31:05.844746+00:00] Sent code: 441623 (was received at 2025-07-25T13:31:00.538604+00:00) and cleared it.[2025-07-30 06:19:55 -0400] [2862501] [CRITICAL] WORKER TIMEOUT (pid:1987612)
+[2025-07-30 06:19:55 -0400] [1987612] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-07-30 06:19:55 -0400] [1987612] [INFO] Worker exiting (pid: 1987612)
+
+[2025-07-25T13:31:12.007045+00:00] Received code: 286347
+[2025-07-25T13:31:17.571725+00:00] Sent code: 286347 (was received at 2025-07-25T13:31:12.007045+00:00) and cleared it.
+[2025-07-25T14:48:47.672064+00:00] Received code: 416392
+[2025-07-25T14:48:52.021592+00:00] Sent code: 416392 (was received at 2025-07-25T14:48:47.672064+00:00) and cleared it.
+[2025-07-28T12:59:16.886934+00:00] Received code: 630618
+[2025-07-28T12:59:20.275280+00:00] Sent code: 630618 (was received at 2025-07-28T12:59:16.886934+00:00) and cleared it.
+[2025-07-28T12:59:32.597513+00:00] Received code: 395648
+[2025-07-28T12:59:36.827361+00:00] Sent code: 395648 (was received at 2025-07-28T12:59:32.597513+00:00) and cleared it.
+[2025-07-28T13:02:49.238208+00:00] Received code: 451022
+[2025-07-28T13:02:57.284837+00:00] Sent code: 451022 (was received at 2025-07-28T13:02:49.238208+00:00) and cleared it.
+[2025-07-28T17:44:51.746631+00:00] Received code: 203443
+[2025-07-28T17:44:55.173136+00:00] Sent code: 203443 (was received at 2025-07-28T17:44:51.746631+00:00) and cleared it.
+[2025-07-28T17:45:54.313519+00:00] Received code: 518693
+[2025-07-28T17:45:57.888842+00:00] Sent code: 518693 (was received at 2025-07-28T17:45:54.313519+00:00) and cleared it.
+[2025-07-29T12:58:36.474196+00:00] Received code: 550075
+[2025-07-29T12:58:42.535201+00:00] Sent code: 550075 (was received at 2025-07-29T12:58:36.474196+00:00) and cleared it.
+[2025-07-29T12:58:50.741865+00:00] Received code: 708847
+[2025-07-29T12:58:58.644085+00:00] Sent code: 708847 (was received at 2025-07-29T12:58:50.741865+00:00) and cleared it.
+[2025-07-29T13:08:06.481883+00:00] Received code: 333831
+[2025-07-29T13:08:12.092297+00:00] Sent code: 333831 (was received at 2025-07-29T13:08:06.481883+00:00) and cleared it.
+[2025-07-30 06:19:55 -0400] [3971685] [INFO] Booting worker with pid: 3971685
+[2025-07-30 06:20:26 -0400] [2862501] [CRITICAL] WORKER TIMEOUT (pid:3971685)
+[2025-07-30 06:20:26 -0400] [3971685] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-07-30 06:20:26 -0400] [3971685] [INFO] Worker exiting (pid: 3971685)
+[2025-07-30 06:20:26 -0400] [3971764] [INFO] Booting worker with pid: 3971764
+[2025-07-31 06:17:43 -0400] [2862501] [CRITICAL] WORKER TIMEOUT (pid:3971764)
+[2025-07-31 06:17:43 -0400] [3971764] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-07-31 06:17:43 -0400] [3971764] [INFO] Worker exiting (pid: 3971764)
+[2025-07-30T13:03:56.323648+00:00] Received code: 488687
+[2025-07-30T13:04:18.268458+00:00] Sent code: 488687 (was received at 2025-07-30T13:03:56.323648+00:00) and cleared it.
+[2025-07-30T13:04:25.809059+00:00] Received code: 526613
+[2025-07-30T13:04:31.461063+00:00] Sent code: 526613 (was received at 2025-07-30T13:04:25.809059+00:00) and cleared it.
+[2025-07-30T13:04:47.568879+00:00] Received code: 572860
+[2025-07-30T13:04:52.273141+00:00] Sent code: 572860 (was received at 2025-07-30T13:04:47.568879+00:00) and cleared it.
+[2025-07-30T14:07:00.452750+00:00] Received code: 266402
+[2025-07-30T14:07:05.017789+00:00] Sent code: 266402 (was received at 2025-07-30T14:07:00.452750+00:00) and cleared it.
+[2025-07-31 06:17:43 -0400] [4070889] [INFO] Booting worker with pid: 4070889
+[2025-07-31 06:18:14 -0400] [2862501] [CRITICAL] WORKER TIMEOUT (pid:4070889)
+[2025-07-31 06:18:14 -0400] [4070889] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-07-31 06:18:14 -0400] [4070889] [INFO] Worker exiting (pid: 4070889)
+[2025-07-31 06:18:14 -0400] [4070919] [INFO] Booting worker with pid: 4070919
+[2025-07-31 07:07:51 -0400] [2862501] [CRITICAL] WORKER TIMEOUT (pid:4070919)
+[2025-07-31 07:07:51 -0400] [4070919] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-07-31 07:07:51 -0400] [4070919] [INFO] Worker exiting (pid: 4070919)
+[2025-07-31 07:07:51 -0400] [4074790] [INFO] Booting worker with pid: 4074790
+[2025-07-31 11:33:12 -0400] [2862501] [CRITICAL] WORKER TIMEOUT (pid:4074790)
+[2025-07-31 11:33:12 -0400] [4074790] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-07-31 11:33:12 -0400] [4074790] [INFO] Worker exiting (pid: 4074790)
+[2025-07-31T13:00:08.058544+00:00] Received code: 279794
+[2025-07-31T13:00:20.977152+00:00] Sent code: 279794 (was received at 2025-07-31T13:00:08.058544+00:00) and cleared it.
+[2025-07-31T13:05:45.812639+00:00] Received code: 672834
+[2025-07-31T13:05:50.802810+00:00] Sent code: 672834 (was received at 2025-07-31T13:05:45.812639+00:00) and cleared it.
+[2025-07-31T13:05:59.492171+00:00] Received code: 167586
+[2025-07-31T13:06:03.429730+00:00] Sent code: 167586 (was received at 2025-07-31T13:05:59.492171+00:00) and cleared it.
+[2025-07-31T13:31:33.007218+00:00] Received code: 579184
+[2025-07-31T13:31:37.309376+00:00] Sent code: 579184 (was received at 2025-07-31T13:31:33.007218+00:00) and cleared it.
+[2025-07-31T14:24:20.386942+00:00] Received code: 575014
+[2025-07-31T14:24:25.897943+00:00] Sent code: 575014 (was received at 2025-07-31T14:24:20.386942+00:00) and cleared it.
+[2025-07-31 11:33:12 -0400] [4092382] [INFO] Booting worker with pid: 4092382
+[2025-07-31 11:33:43 -0400] [2862501] [CRITICAL] WORKER TIMEOUT (pid:4092382)
+[2025-07-31 11:33:43 -0400] [4092382] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-07-31 11:33:43 -0400] [4092382] [INFO] Worker exiting (pid: 4092382)
+[2025-07-31 11:33:43 -0400] [4092402] [INFO] Booting worker with pid: 4092402
+[2025-07-31T17:26:36.308962+00:00] Received code: 687878
+[2025-07-31T17:26:39.288083+00:00] Sent code: 687878 (was received at 2025-07-31T17:26:36.308962+00:00) and cleared it.
+[2025-07-31T19:37:41.913763+00:00] Received code: 427252
+[2025-07-31T19:37:42.757537+00:00] Sent code: 427252 (was received at 2025-07-31T19:37:41.913763+00:00) and cleared it.
+[2025-07-31T20:30:10.709092+00:00] Received code: 368617
+[2025-08-01T13:17:44.591733+00:00] Received code: 603811
+[2025-08-01T13:17:52.012300+00:00] Sent code: 603811 (was received at 2025-08-01T13:17:44.591733+00:00) and cleared it.
+[2025-08-01T13:17:58.230068+00:00] Received code: 116058
+[2025-08-01T13:18:04.962601+00:00] Sent code: 116058 (was received at 2025-08-01T13:17:58.230068+00:00) and cleared it.
+[2025-08-01T13:56:29.070642+00:00] Received code: 355773
+[2025-08-01T13:56:29.763111+00:00] Sent code: 355773 (was received at 2025-08-01T13:56:29.070642+00:00) and cleared it.
+[2025-08-01T15:16:20.432551+00:00] Received code: 226363
+[2025-08-01T15:16:25.937939+00:00] Sent code: 226363 (was received at 2025-08-01T15:16:20.432551+00:00) and cleared it.
+[2025-08-04T13:05:33.392700+00:00] Received code: 361398
+[2025-08-04T13:05:33.915915+00:00] Sent code: 361398 (was received at 2025-08-04T13:05:33.392700+00:00) and cleared it.
+[2025-08-04T13:32:45.702432+00:00] Received code: 364837
+[2025-08-04T13:32:46.530823+00:00] Received code: 485894
+[2025-08-04T13:32:48.397601+00:00] Sent code: 485894 (was received at 2025-08-04T13:32:46.530823+00:00) and cleared it.
+[2025-08-04T13:33:01.219641+00:00] Received code: 711330
+[2025-08-04T13:33:04.684249+00:00] Sent code: 711330 (was received at 2025-08-04T13:33:01.219641+00:00) and cleared it.
+[2025-08-05T13:00:44.507506+00:00] Received code: 696378
+[2025-08-05T13:00:49.873496+00:00] Sent code: 696378 (was received at 2025-08-05T13:00:44.507506+00:00) and cleared it.
+[2025-08-05T13:01:00.447781+00:00] Received code: 337121
+[2025-08-05T13:01:02.454936+00:00] Sent code: 337121 (was received at 2025-08-05T13:01:00.447781+00:00) and cleared it.
+[2025-08-05T14:10:35.440225+00:00] Received code: 514517
+[2025-08-05T14:10:37.838167+00:00] Sent code: 514517 (was received at 2025-08-05T14:10:35.440225+00:00) and cleared it.
+[2025-08-06T13:08:22.557131+00:00] Received code: 425310
+[2025-08-06T13:08:26.580667+00:00] Sent code: 425310 (was received at 2025-08-06T13:08:22.557131+00:00) and cleared it.
+[2025-08-06T14:14:54.526090+00:00] Received code: 341856
+[2025-08-06T14:15:01.561516+00:00] Sent code: 341856 (was received at 2025-08-06T14:14:54.526090+00:00) and cleared it.
+[2025-08-06T17:05:38.861798+00:00] Received code: 537217
+[2025-08-06T17:05:43.366091+00:00] Sent code: 537217 (was received at 2025-08-06T17:05:38.861798+00:00) and cleared it.
+[2025-08-06T19:33:33.988330+00:00] Received code: 433714
+[2025-08-06T19:33:36.621476+00:00] Sent code: 433714 (was received at 2025-08-06T19:33:33.988330+00:00) and cleared it.
+[2025-08-07T13:03:25.370142+00:00] Received code: 343766
+[2025-08-07T13:03:31.327577+00:00] Sent code: 343766 (was received at 2025-08-07T13:03:25.370142+00:00) and cleared it.
+[2025-08-07T13:14:08.327560+00:00] Received code: 187375
+[2025-08-07T13:14:18.789612+00:00] Sent code: 187375 (was received at 2025-08-07T13:14:08.327560+00:00) and cleared it.
+[2025-08-07T16:19:57.174452+00:00] Received code: 359995
+[2025-08-07T16:20:01.739946+00:00] Sent code: 359995 (was received at 2025-08-07T16:19:57.174452+00:00) and cleared it.
+[2025-08-07T16:22:00.686110+00:00] Received code: 659361
+[2025-08-07T16:22:04.833206+00:00] Sent code: 659361 (was received at 2025-08-07T16:22:00.686110+00:00) and cleared it.
+[2025-08-07T16:22:13.847853+00:00] Received code: 379119
+[2025-08-07T16:22:17.372463+00:00] Sent code: 379119 (was received at 2025-08-07T16:22:13.847853+00:00) and cleared it.
+[2025-08-08T13:02:54.396344+00:00] Received code: 439094
+[2025-08-08T13:02:56.950275+00:00] Sent code: 439094 (was received at 2025-08-08T13:02:54.396344+00:00) and cleared it.
+[2025-08-08T13:06:38.108122+00:00] Received code: 435436
+[2025-08-08T13:06:40.447319+00:00] Sent code: 435436 (was received at 2025-08-08T13:06:38.108122+00:00) and cleared it.
+[2025-08-08T13:06:46.369778+00:00] Received code: 182401
+[2025-08-08T13:06:51.751871+00:00] Sent code: 182401 (was received at 2025-08-08T13:06:46.369778+00:00) and cleared it.
+[2025-08-08T16:46:48.341646+00:00] Received code: 492375
+[2025-08-08T16:46:51.743222+00:00] Sent code: 492375 (was received at 2025-08-08T16:46:48.341646+00:00) and cleared it.
+[2025-08-11T13:21:21.904047+00:00] Received code: 367845
+[2025-08-11T13:21:27.486437+00:00] Sent code: 367845 (was received at 2025-08-11T13:21:21.904047+00:00) and cleared it.
+[2025-08-11T13:41:40.599376+00:00] Received code: 202610
+[2025-08-11T13:41:48.608308+00:00] Sent code: 202610 (was received at 2025-08-11T13:41:40.599376+00:00) and cleared it.
+[2025-08-11T14:03:31.194767+00:00] Received code: 178848
+[2025-08-11T14:03:34.411967+00:00] Sent code: 178848 (was received at 2025-08-11T14:03:31.194767+00:00) and cleared it.
+[2025-08-11T14:54:12.383138+00:00] Received code: 165268
+[2025-08-12T12:59:04.730140+00:00] Received code: 528803
+[2025-08-12T12:59:09.529425+00:00] Sent code: 528803 (was received at 2025-08-12T12:59:04.730140+00:00) and cleared it.
+[2025-08-12T12:59:16.890696+00:00] Received code: 443311
+[2025-08-12T12:59:20.922963+00:00] Sent code: 443311 (was received at 2025-08-12T12:59:16.890696+00:00) and cleared it.
+[2025-08-12T14:30:40.293429+00:00] Received code: 636760
+[2025-08-12T14:30:40.756520+00:00] Sent code: 636760 (was received at 2025-08-12T14:30:40.293429+00:00) and cleared it.
+[2025-08-13T12:07:59.539655+00:00] Received code: 203942
+[2025-08-13T12:07:59.883459+00:00] Sent code: 203942 (was received at 2025-08-13T12:07:59.539655+00:00) and cleared it.
+[2025-08-13T12:09:25.995597+00:00] Received code: 508226
+[2025-08-13T12:09:28.892974+00:00] Sent code: 508226 (was received at 2025-08-13T12:09:25.995597+00:00) and cleared it.
+[2025-08-13T12:09:34.329585+00:00] Received code: 853425
+[2025-08-13T12:09:36.574632+00:00] Sent code: 853425 (was received at 2025-08-13T12:09:34.329585+00:00) and cleared it.
+[2025-08-13T18:26:05.209520+00:00] Received code: 201423
+[2025-08-13T18:26:11.421111+00:00] Sent code: 201423 (was received at 2025-08-13T18:26:05.209520+00:00) and cleared it.
+[2025-08-14T03:06:06.314215+00:00] Received code: 212174
+[2025-08-18T12:58:05.128404+00:00] Received code: 305216
+[2025-08-18T12:58:09.266194+00:00] Sent code: 305216 (was received at 2025-08-18T12:58:05.128404+00:00) and cleared it.
+[2025-08-18T13:02:33.038488+00:00] Received code: 131879
+[2025-08-18T15:57:42.895293+00:00] Received code: 330279
+[2025-08-18T15:57:50.547486+00:00] Sent code: 330279 (was received at 2025-08-18T15:57:42.895293+00:00) and cleared it.
+[2025-08-18T17:58:14.651039+00:00] Received code: 710211
+[2025-08-18T19:46:18.322613+00:00] Received code: 306245
+[2025-08-18T19:46:36.282675+00:00] Sent code: 306245 (was received at 2025-08-18T19:46:18.322613+00:00) and cleared it.
+[2025-08-19T04:05:25.114876+00:00] Received code: 456349
+[2025-08-19T14:27:09.264249+00:00] Received code: 590478
+[2025-08-19T14:27:29.328605+00:00] Received code: 292375
+[2025-08-19T18:07:36.281030+00:00] Received code: 493528
+[2025-08-19T18:08:33.734257+00:00] Sent code: 493528 (was received at 2025-08-19T18:07:36.281030+00:00) and cleared it.
+[2025-08-19T19:02:15.314527+00:00] Received code: 711240
+[2025-08-20T01:49:49.277483+00:00] Received code: 296368
+[2025-08-20T01:50:17.448055+00:00] Sent code: 296368 (was received at 2025-08-20T01:49:49.277483+00:00) and cleared it.
+[2025-08-20T01:50:23.238142+00:00] Received code: 444493
+[2025-08-20T01:50:39.135725+00:00] Sent code: 444493 (was received at 2025-08-20T01:50:23.238142+00:00) and cleared it.
+[2025-08-20T13:00:13.673188+00:00] Received code: 373115
+[2025-08-20T13:00:20.242646+00:00] Sent code: 373115 (was received at 2025-08-20T13:00:13.673188+00:00) and cleared it.
+[2025-08-20T13:01:13.266275+00:00] Received code: 387065
+[2025-08-20T13:01:27.891866+00:00] Sent code: 387065 (was received at 2025-08-20T13:01:13.266275+00:00) and cleared it.
+[2025-08-24 03:29:39 -0400] [4092402] [WARNING] Invalid request from ip=188.246.224.87: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2025-08-24 17:02:10 -0400] [4092402] [WARNING] Invalid request from ip=188.246.224.87: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2025-08-26 09:00:44 -0400] [4092402] [WARNING] Invalid request from ip=109.205.213.105: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2025-09-01 09:58:21 -0400] [4092402] [WARNING] Invalid request from ip=194.180.49.26: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2025-08-20T15:04:59.424829+00:00] Received code: 194596
+[2025-08-20T15:04:59.566609+00:00] Sent code: 194596 (was received at 2025-08-20T15:04:59.424829+00:00) and cleared it.
+[2025-08-20T15:17:56.795813+00:00] Received code: 296790
+[2025-08-20T15:18:01.023782+00:00] Sent code: 296790 (was received at 2025-08-20T15:17:56.795813+00:00) and cleared it.
+[2025-08-20T16:05:46.192828+00:00] Received code: 624263
+[2025-08-20T16:05:46.194016+00:00] Sent code: 624263 (was received at 2025-08-20T16:05:46.192828+00:00) and cleared it.
+[2025-08-20T17:24:37.200923+00:00] Received code: 172458
+[2025-08-20T17:24:45.710033+00:00] Sent code: 172458 (was received at 2025-08-20T17:24:37.200923+00:00) and cleared it.
+[2025-08-20T21:03:05.436588+00:00] Received code: 673810
+[2025-08-20T21:03:15.087749+00:00] Sent code: 673810 (was received at 2025-08-20T21:03:05.436588+00:00) and cleared it.
+[2025-08-21T17:54:58.591566+00:00] Received code: 528802
+[2025-08-21T17:55:05.957422+00:00] Sent code: 528802 (was received at 2025-08-21T17:54:58.591566+00:00) and cleared it.
+[2025-08-21T17:55:15.209208+00:00] Received code: 654281
+[2025-08-21T17:55:17.460180+00:00] Sent code: 654281 (was received at 2025-08-21T17:55:15.209208+00:00) and cleared it.
+[2025-08-22T13:00:44.656919+00:00] Received code: 545606
+[2025-08-22T13:00:50.797044+00:00] Sent code: 545606 (was received at 2025-08-22T13:00:44.656919+00:00) and cleared it.
+[2025-08-22T13:10:28.638632+00:00] Received code: 675377
+[2025-08-22T13:10:36.616617+00:00] Sent code: 675377 (was received at 2025-08-22T13:10:28.638632+00:00) and cleared it.
+[2025-08-22T13:10:44.546625+00:00] Received code: 667451
+[2025-08-22T13:10:47.495474+00:00] Sent code: 667451 (was received at 2025-08-22T13:10:44.546625+00:00) and cleared it.
+[2025-08-25T13:05:08.478329+00:00] Received code: 325514
+[2025-08-25T13:05:12.779255+00:00] Sent code: 325514 (was received at 2025-08-25T13:05:08.478329+00:00) and cleared it.
+[2025-08-25T13:07:50.771297+00:00] Received code: 442096
+[2025-08-25T13:07:56.655882+00:00] Sent code: 442096 (was received at 2025-08-25T13:07:50.771297+00:00) and cleared it.
+[2025-08-25T18:35:20.027688+00:00] Received code: 432824
+[2025-08-25T18:35:20.032170+00:00] Sent code: 432824 (was received at 2025-08-25T18:35:20.027688+00:00) and cleared it.
+[2025-08-26T13:02:02.341244+00:00] Received code: 237101
+[2025-08-26T13:02:03.183590+00:00] Sent code: 237101 (was received at 2025-08-26T13:02:02.341244+00:00) and cleared it.
+[2025-08-26T13:02:12.709104+00:00] Received code: 761500
+[2025-08-26T13:02:17.668329+00:00] Sent code: 761500 (was received at 2025-08-26T13:02:12.709104+00:00) and cleared it.
+[2025-08-26T13:03:35.920677+00:00] Received code: 288807
+[2025-08-26T13:03:48.866371+00:00] Sent code: 288807 (was received at 2025-08-26T13:03:35.920677+00:00) and cleared it.
+[2025-08-26T22:49:22.675422+00:00] Received code: 705573
+[2025-08-27T13:03:18.424810+00:00] Received code: 666138
+[2025-08-27T13:03:25.180443+00:00] Sent code: 666138 (was received at 2025-08-27T13:03:18.424810+00:00) and cleared it.
+[2025-08-27T13:03:31.944523+00:00] Received code: 366543
+[2025-08-27T13:04:00.846552+00:00] Sent code: 366543 (was received at 2025-08-27T13:03:31.944523+00:00) and cleared it.
+[2025-08-27T13:09:35.489360+00:00] Received code: 688096
+[2025-08-27T13:09:39.708739+00:00] Sent code: 688096 (was received at 2025-08-27T13:09:35.489360+00:00) and cleared it.
+[2025-08-27T15:11:06.950176+00:00] Received code: 982988
+[2025-08-27T15:11:07.936896+00:00] Sent code: 982988 (was received at 2025-08-27T15:11:06.950176+00:00) and cleared it.
+[2025-08-27T17:33:28.042344+00:00] Received code: 129579
+[2025-08-27T17:33:31.764132+00:00] Sent code: 129579 (was received at 2025-08-27T17:33:28.042344+00:00) and cleared it.
+[2025-08-27T17:33:45.291317+00:00] Received code: 582647
+[2025-08-27T17:33:50.186976+00:00] Sent code: 582647 (was received at 2025-08-27T17:33:45.291317+00:00) and cleared it.
+[2025-08-28T12:59:32.770281+00:00] Received code: 222240
+[2025-08-28T12:59:35.654321+00:00] Sent code: 222240 (was received at 2025-08-28T12:59:32.770281+00:00) and cleared it.
+[2025-08-28T13:00:12.363762+00:00] Received code: 224394
+[2025-08-28T13:00:15.267200+00:00] Sent code: 224394 (was received at 2025-08-28T13:00:12.363762+00:00) and cleared it.
+[2025-08-28T16:28:05.840942+00:00] Received code: 325822
+[2025-08-28T16:28:16.859602+00:00] Sent code: 325822 (was received at 2025-08-28T16:28:05.840942+00:00) and cleared it.
+[2025-08-28T16:28:33.915673+00:00] Received code: 812204
+[2025-08-28T16:28:37.462831+00:00] Sent code: 812204 (was received at 2025-08-28T16:28:33.915673+00:00) and cleared it.
+[2025-08-29T12:50:40.702015+00:00] Received code: 371613
+[2025-08-29T12:50:48.304229+00:00] Sent code: 371613 (was received at 2025-08-29T12:50:40.702015+00:00) and cleared it.
+[2025-08-29T12:51:13.835705+00:00] Received code: 445984
+[2025-08-29T12:51:18.803884+00:00] Sent code: 445984 (was received at 2025-08-29T12:51:13.835705+00:00) and cleared it.
+[2025-09-02T13:01:47.534150+00:00] Received code: 638472
+[2025-09-02T13:01:54.732235+00:00] Sent code: 638472 (was received at 2025-09-02T13:01:47.534150+00:00) and cleared it.
+[2025-09-02T13:08:23.760488+00:00] Received code: 950157
+[2025-09-02T13:08:26.275881+00:00] Sent code: 950157 (was received at 2025-09-02T13:08:23.760488+00:00) and cleared it.
+[2025-09-02T13:08:31.926860+00:00] Received code: 243591
+[2025-09-02T13:08:37.650548+00:00] Sent code: 243591 (was received at 2025-09-02T13:08:31.926860+00:00) and cleared it.
+[2025-09-02T19:08:21.594561+00:00] Received code: 693939
+[2025-09-02T19:08:21.835153+00:00] Sent code: 693939 (was received at 2025-09-02T19:08:21.594561+00:00) and cleared it.
+[2025-09-02T21:33:23.134749+00:00] Received code: 534045
+[2025-09-02T21:33:26.381639+00:00] Sent code: 534045 (was received at 2025-09-02T21:33:23.134749+00:00) and cleared it.
+[2025-09-03T12:59:11.746462+00:00] Received code: 510283
+[2025-09-03T12:59:17.137024+00:00] Sent code: 510283 (was received at 2025-09-03T12:59:11.746462+00:00) and cleared it.
+[2025-09-03T12:59:23.800685+00:00] Received code: 704110
+[2025-09-03T12:59:30.462954+00:00] Sent code: 704110 (was received at 2025-09-03T12:59:23.800685+00:00) and cleared it.
+[2025-09-03T13:06:45.280609+00:00] Received code: 201656
+[2025-09-03T13:06:50.953043+00:00] Sent code: 201656 (was received at 2025-09-03T13:06:45.280609+00:00) and cleared it.
+[2025-09-03T16:35:49.293309+00:00] Received code: 991995
+[2025-09-03T16:35:52.122280+00:00] Sent code: 991995 (was received at 2025-09-03T16:35:49.293309+00:00) and cleared it.
+[2025-09-04T13:35:15.735919+00:00] Received code: 633281
+[2025-09-04T13:35:17.101306+00:00] Sent code: 633281 (was received at 2025-09-04T13:35:15.735919+00:00) and cleared it.
+[2025-09-04T13:35:23.774754+00:00] Received code: 293977
+[2025-09-04T13:35:27.967497+00:00] Sent code: 293977 (was received at 2025-09-04T13:35:23.774754+00:00) and cleared it.
+[2025-09-04T15:31:00.247512+00:00] Received code: 532561
+[2025-09-04T17:34:27.382901+00:00] Received code: 167921
+[2025-09-04T17:34:31.898936+00:00] Sent code: 167921 (was received at 2025-09-04T17:34:27.382901+00:00) and cleared it.
+[2025-09-04T20:37:02.300153+00:00] Received code: 585030
+[2025-09-04T23:34:44.917202+00:00] Received code: 254167
+[2025-09-04T23:34:50.875630+00:00] Sent code: 254167 (was received at 2025-09-04T23:34:44.917202+00:00) and cleared it.
+[2025-09-05T13:00:24.315841+00:00] Received code: 904800
+[2025-09-05T13:00:25.695860+00:00] Sent code: 904800 (was received at 2025-09-05T13:00:24.315841+00:00) and cleared it.
+[2025-09-05T13:08:11.835796+00:00] Received code: 419411
+[2025-09-05T13:08:16.562684+00:00] Sent code: 419411 (was received at 2025-09-05T13:08:11.835796+00:00) and cleared it.
+[2025-09-05T13:08:24.145289+00:00] Received code: 931941
+[2025-09-05T13:08:27.532377+00:00] Sent code: 931941 (was received at 2025-09-05T13:08:24.145289+00:00) and cleared it.
+[2025-09-05T21:29:21.729148+00:00] Received code: 203648
+[2025-09-05T21:30:28.848543+00:00] Sent code: 203648 (was received at 2025-09-05T21:29:21.729148+00:00) and cleared it.
+[2025-09-08T13:18:56.857504+00:00] Received code: 709811[2025-09-21 01:31:02 -0400] [2862501] [CRITICAL] WORKER TIMEOUT (pid:4092402)
+[2025-09-21 01:31:02 -0400] [4092402] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-09-21 01:31:02 -0400] [4092402] [INFO] Worker exiting (pid: 4092402)
+
+[2025-09-08T13:19:00.452947+00:00] Sent code: 709811 (was received at 2025-09-08T13:18:56.857504+00:00) and cleared it.
+[2025-09-08T13:19:08.779096+00:00] Received code: 233182
+[2025-09-08T13:19:12.847708+00:00] Sent code: 233182 (was received at 2025-09-08T13:19:08.779096+00:00) and cleared it.
+[2025-09-08T13:20:18.799825+00:00] Received code: 283887
+[2025-09-08T13:20:24.104745+00:00] Sent code: 283887 (was received at 2025-09-08T13:20:18.799825+00:00) and cleared it.
+[2025-09-08T16:49:14.991259+00:00] Received code: 325843
+[2025-09-08T16:49:17.111487+00:00] Sent code: 325843 (was received at 2025-09-08T16:49:14.991259+00:00) and cleared it.
+[2025-09-08T17:05:53.975755+00:00] Received code: 526431
+[2025-09-08T17:05:55.713666+00:00] Sent code: 526431 (was received at 2025-09-08T17:05:53.975755+00:00) and cleared it.
+[2025-09-09T14:03:23.102334+00:00] Received code: 523658
+[2025-09-09T14:04:17.478383+00:00] Received code: 588487
+[2025-09-09T14:04:40.680943+00:00] Received code: 415026
+[2025-09-09T14:05:21.446488+00:00] Received code: 205151
+[2025-09-10T13:05:57.563606+00:00] Received code: 228397
+[2025-09-10T13:06:04.846697+00:00] Sent code: 228397 (was received at 2025-09-10T13:05:57.563606+00:00) and cleared it.
+[2025-09-10T13:06:12.056814+00:00] Received code: 290935
+[2025-09-10T13:06:16.351562+00:00] Sent code: 290935 (was received at 2025-09-10T13:06:12.056814+00:00) and cleared it.
+[2025-09-10T18:20:57.203211+00:00] Received code: 718060
+[2025-09-10T18:21:01.777533+00:00] Sent code: 718060 (was received at 2025-09-10T18:20:57.203211+00:00) and cleared it.
+[2025-09-10T18:21:08.526720+00:00] Received code: 685445
+[2025-09-10T18:21:11.937465+00:00] Sent code: 685445 (was received at 2025-09-10T18:21:08.526720+00:00) and cleared it.
+[2025-09-10T22:47:03.838800+00:00] Received code: 183290
+[2025-09-10T22:47:13.264889+00:00] Sent code: 183290 (was received at 2025-09-10T22:47:03.838800+00:00) and cleared it.
+[2025-09-10T22:47:23.487414+00:00] Received code: 119411
+[2025-09-10T22:47:27.385353+00:00] Sent code: 119411 (was received at 2025-09-10T22:47:23.487414+00:00) and cleared it.
+[2025-09-11T12:06:54.903235+00:00] Received code: 291353
+[2025-09-11T12:07:01.531325+00:00] Sent code: 291353 (was received at 2025-09-11T12:06:54.903235+00:00) and cleared it.
+[2025-09-11T12:07:09.566024+00:00] Received code: 123599
+[2025-09-11T12:07:12.997226+00:00] Sent code: 123599 (was received at 2025-09-11T12:07:09.566024+00:00) and cleared it.
+[2025-09-12T13:06:23.194854+00:00] Received code: 584827
+[2025-09-12T13:06:25.980375+00:00] Sent code: 584827 (was received at 2025-09-12T13:06:23.194854+00:00) and cleared it.
+[2025-09-12T13:06:32.740083+00:00] Received code: 826248
+[2025-09-12T13:06:37.026414+00:00] Sent code: 826248 (was received at 2025-09-12T13:06:32.740083+00:00) and cleared it.
+[2025-09-15T13:07:20.315465+00:00] Received code: 279032
+[2025-09-15T13:07:27.967266+00:00] Sent code: 279032 (was received at 2025-09-15T13:07:20.315465+00:00) and cleared it.
+[2025-09-15T13:07:34.495080+00:00] Received code: 143628
+[2025-09-15T13:07:41.455344+00:00] Sent code: 143628 (was received at 2025-09-15T13:07:34.495080+00:00) and cleared it.
+[2025-09-16T11:06:48.306308+00:00] Received code: 224274
+[2025-09-16T11:06:50.793944+00:00] Sent code: 224274 (was received at 2025-09-16T11:06:48.306308+00:00) and cleared it.
+[2025-09-16T11:07:01.018766+00:00] Received code: 662901
+[2025-09-16T11:07:06.108772+00:00] Sent code: 662901 (was received at 2025-09-16T11:07:01.018766+00:00) and cleared it.
+[2025-09-16T15:52:12.023126+00:00] Received code: 418105
+[2025-09-16T15:52:14.867296+00:00] Sent code: 418105 (was received at 2025-09-16T15:52:12.023126+00:00) and cleared it.
+[2025-09-16T15:52:20.678946+00:00] Received code: 549745
+[2025-09-16T15:52:27.100464+00:00] Sent code: 549745 (was received at 2025-09-16T15:52:20.678946+00:00) and cleared it.
+[2025-09-16T20:53:56.604488+00:00] Received code: 664756
+[2025-09-16T20:54:12.508446+00:00] Sent code: 664756 (was received at 2025-09-16T20:53:56.604488+00:00) and cleared it.
+[2025-09-17T13:11:04.161684+00:00] Received code: 665443
+[2025-09-17T13:11:06.690482+00:00] Sent code: 665443 (was received at 2025-09-17T13:11:04.161684+00:00) and cleared it.
+[2025-09-17T13:11:13.152444+00:00] Received code: 823471
+[2025-09-17T13:11:16.624629+00:00] Sent code: 823471 (was received at 2025-09-17T13:11:13.152444+00:00) and cleared it.
+[2025-09-17T16:19:22.183606+00:00] Received code: 520317
+[2025-09-17T16:19:28.466031+00:00] Sent code: 520317 (was received at 2025-09-17T16:19:22.183606+00:00) and cleared it.
+[2025-09-17T16:19:34.108056+00:00] Received code: 493184
+[2025-09-17T16:19:36.237582+00:00] Sent code: 493184 (was received at 2025-09-17T16:19:34.108056+00:00) and cleared it.
+[2025-09-18T12:53:15.348259+00:00] Received code: 547594
+[2025-09-18T12:53:17.535548+00:00] Sent code: 547594 (was received at 2025-09-18T12:53:15.348259+00:00) and cleared it.
+[2025-09-19T13:07:14.224919+00:00] Received code: 549193
+[2025-09-19T13:07:23.256172+00:00] Sent code: 549193 (was received at 2025-09-19T13:07:14.224919+00:00) and cleared it.
+[2025-09-19T13:07:30.151844+00:00] Received code: 394339
+[2025-09-19T13:07:35.103124+00:00] Sent code: 394339 (was received at 2025-09-19T13:07:30.151844+00:00) and cleared it.
+[2025-09-19T18:59:17.905643+00:00] Received code: 699897
+[2025-09-19T18:59:25.145220+00:00] Sent code: 699897 (was received at 2025-09-19T18:59:17.905643+00:00) and cleared it.
+[2025-09-21 01:31:02 -0400] [197904] [INFO] Booting worker with pid: 197904
+[2025-10-08 10:56:52 -0400] [197904] [WARNING] Invalid request from ip=109.205.211.199: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2025-10-11 21:00:56 -0400] [2862501] [CRITICAL] WORKER TIMEOUT (pid:197904)
+[2025-10-11 21:00:56 -0400] [197904] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-10-11 21:00:56 -0400] [197904] [INFO] Worker exiting (pid: 197904)
+[2025-09-22T13:03:01.180432+00:00] Received code: 300959
+[2025-09-22T13:03:06.844725+00:00] Sent code: 300959 (was received at 2025-09-22T13:03:01.180432+00:00) and cleared it.
+[2025-09-22T13:03:13.339449+00:00] Received code: 613087
+[2025-09-22T13:03:19.251195+00:00] Sent code: 613087 (was received at 2025-09-22T13:03:13.339449+00:00) and cleared it.
+[2025-09-22T17:10:38.759823+00:00] Received code: 605364
+[2025-09-22T17:10:51.988690+00:00] Sent code: 605364 (was received at 2025-09-22T17:10:38.759823+00:00) and cleared it.
+[2025-09-22T17:11:17.560356+00:00] Received code: 403402
+[2025-09-22T17:11:19.898271+00:00] Sent code: 403402 (was received at 2025-09-22T17:11:17.560356+00:00) and cleared it.
+[2025-09-23T13:03:10.921655+00:00] Received code: 192826
+[2025-09-23T13:03:15.999168+00:00] Sent code: 192826 (was received at 2025-09-23T13:03:10.921655+00:00) and cleared it.
+[2025-09-23T13:03:26.725710+00:00] Received code: 420469
+[2025-09-23T13:03:31.899927+00:00] Sent code: 420469 (was received at 2025-09-23T13:03:26.725710+00:00) and cleared it.
+[2025-09-24T13:12:59.566827+00:00] Received code: 301299
+[2025-09-24T13:13:08.582666+00:00] Sent code: 301299 (was received at 2025-09-24T13:12:59.566827+00:00) and cleared it.
+[2025-09-25T13:04:13.412212+00:00] Received code: 118763
+[2025-09-25T13:04:18.347311+00:00] Sent code: 118763 (was received at 2025-09-25T13:04:13.412212+00:00) and cleared it.
+[2025-09-26T13:03:24.875029+00:00] Received code: 149428
+[2025-09-26T13:03:27.885413+00:00] Sent code: 149428 (was received at 2025-09-26T13:03:24.875029+00:00) and cleared it.
+[2025-09-26T13:03:38.793476+00:00] Received code: 660939
+[2025-09-26T13:03:43.862514+00:00] Sent code: 660939 (was received at 2025-09-26T13:03:38.793476+00:00) and cleared it.
+[2025-09-26T13:35:31.264688+00:00] Received code: 538143
+[2025-09-26T13:35:40.729456+00:00] Sent code: 538143 (was received at 2025-09-26T13:35:31.264688+00:00) and cleared it.
+[2025-09-29T13:04:04.815874+00:00] Received code: 221852
+[2025-09-29T13:04:11.346118+00:00] Sent code: 221852 (was received at 2025-09-29T13:04:04.815874+00:00) and cleared it.
+[2025-09-29T13:04:38.074763+00:00] Received code: 190322
+[2025-09-29T13:04:38.168211+00:00] Sent code: 190322 (was received at 2025-09-29T13:04:38.074763+00:00) and cleared it.
+[2025-09-30T13:04:59.585554+00:00] Received code: 555736
+[2025-09-30T13:05:06.336561+00:00] Sent code: 555736 (was received at 2025-09-30T13:04:59.585554+00:00) and cleared it.
+[2025-09-30T13:05:12.753135+00:00] Received code: 450994
+[2025-09-30T13:05:18.219855+00:00] Sent code: 450994 (was received at 2025-09-30T13:05:12.753135+00:00) and cleared it.
+[2025-10-01T00:07:52.400941+00:00] Received code: 385266
+[2025-10-01T00:07:53.052384+00:00] Received code: 477388
+[2025-10-01T13:06:23.566758+00:00] Received code: 263582
+[2025-10-01T13:06:36.305053+00:00] Sent code: 263582 (was received at 2025-10-01T13:06:23.566758+00:00) and cleared it.
+[2025-10-01T13:06:44.414147+00:00] Received code: 428839
+[2025-10-01T13:06:51.163611+00:00] Sent code: 428839 (was received at 2025-10-01T13:06:44.414147+00:00) and cleared it.
+[2025-10-02T13:02:38.908731+00:00] Received code: 547238
+[2025-10-02T13:03:06.687306+00:00] Received code: 402615
+[2025-10-03T01:27:56.241097+00:00] Received code: 162580
+[2025-10-03T01:28:05.981166+00:00] Sent code: 162580 (was received at 2025-10-03T01:27:56.241097+00:00) and cleared it.
+[2025-10-03T01:28:14.120100+00:00] Received code: 453836
+[2025-10-03T01:28:19.482140+00:00] Sent code: 453836 (was received at 2025-10-03T01:28:14.120100+00:00) and cleared it.
+[2025-10-03T21:57:38.456070+00:00] Received code: 612042
+[2025-10-03T21:57:49.803407+00:00] Sent code: 612042 (was received at 2025-10-03T21:57:38.456070+00:00) and cleared it.
+[2025-10-03T21:58:01.370404+00:00] Received code: 205283
+[2025-10-03T21:58:08.267231+00:00] Sent code: 205283 (was received at 2025-10-03T21:58:01.370404+00:00) and cleared it.
+[2025-10-06T13:03:59.246955+00:00] Received code: 508491
+[2025-10-06T13:04:08.853287+00:00] Sent code: 508491 (was received at 2025-10-06T13:03:59.246955+00:00) and cleared it.
+[2025-10-06T13:04:16.074761+00:00] Received code: 170347
+[2025-10-06T13:04:25.160790+00:00] Sent code: 170347 (was received at 2025-10-06T13:04:16.074761+00:00) and cleared it.
+[2025-10-07T12:55:55.018170+00:00] Received code: 281843
+[2025-10-07T12:56:01.374400+00:00] Sent code: 281843 (was received at 2025-10-07T12:55:55.018170+00:00) and cleared it.
+[2025-10-07T12:56:08.805109+00:00] Received code: 355168
+[2025-10-07T12:56:16.563065+00:00] Sent code: 355168 (was received at 2025-10-07T12:56:08.805109+00:00) and cleared it.
+[2025-10-08T13:04:32.773511+00:00] Received code: 501866
+[2025-10-08T13:04:38.061797+00:00] Sent code: 501866 (was received at 2025-10-08T13:04:32.773511+00:00) and cleared it.
+[2025-10-08T13:04:46.773181+00:00] Received code: 369538
+[2025-10-08T13:04:54.075904+00:00] Sent code: 369538 (was received at 2025-10-08T13:04:46.773181+00:00) and cleared it.
+[2025-10-09T13:29:51.034229+00:00] Received code: 593529
+[2025-10-09T13:29:56.812552+00:00] Sent code: 593529 (was received at 2025-10-09T13:29:51.034229+00:00) and cleared it.
+[2025-10-09T13:30:03.710469+00:00] Received code: 693132
+[2025-10-09T13:30:11.819199+00:00] Sent code: 693132 (was received at 2025-10-09T13:30:03.710469+00:00) and cleared it.
+[2025-10-10T12:57:56.172661+00:00] Received code: 283442
+[2025-10-10T12:57:59.937366+00:00] Sent code: 283442 (was received at 2025-10-10T12:57:56.172661+00:00) and cleared it.
+[2025-10-10T18:19:47.538801+00:00] Received code: 423069
+[2025-10-10T18:19:57.000767+00:00] Sent code: 423069 (was received at 2025-10-10T18:19:47.538801+00:00) and cleared it.
+[2025-10-11 21:00:57 -0400] [1993416] [INFO] Booting worker with pid: 1993416
+[2025-10-17 16:24:02 -0400] [1993416] [WARNING] Invalid request from ip=185.16.39.136: Invalid HTTP Version: (2, 0)
+[2025-10-17 16:24:03 -0400] [1993416] [WARNING] Invalid request from ip=185.16.39.136: Invalid HTTP Version: (2, 0)
+[2025-10-17 16:24:05 -0400] [1993416] [WARNING] Invalid request from ip=185.16.39.136: Invalid HTTP Version: (2, 0)
+[2025-10-17 16:24:08 -0400] [1993416] [WARNING] Invalid request from ip=185.16.39.136: Invalid HTTP Version: (2, 0)
+[2025-11-02 11:19:20 -0500] [2862501] [CRITICAL] WORKER TIMEOUT (pid:1993416)
+[2025-11-02 11:19:20 -0500] [1993416] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-11-02 11:19:20 -0500] [1993416] [INFO] Worker exiting (pid: 1993416)
+[2025-10-13T13:02:15.773070+00:00] Received code: 394282
+[2025-10-13T13:02:22.584800+00:00] Sent code: 394282 (was received at 2025-10-13T13:02:15.773070+00:00) and cleared it.
+[2025-10-13T13:02:29.375305+00:00] Received code: 404326
+[2025-10-13T13:02:34.946731+00:00] Sent code: 404326 (was received at 2025-10-13T13:02:29.375305+00:00) and cleared it.
+[2025-10-14T13:07:22.935475+00:00] Received code: 271997
+[2025-10-14T13:07:29.733629+00:00] Sent code: 271997 (was received at 2025-10-14T13:07:22.935475+00:00) and cleared it.
+[2025-10-14T13:07:37.450673+00:00] Received code: 427297
+[2025-10-14T13:07:45.226238+00:00] Sent code: 427297 (was received at 2025-10-14T13:07:37.450673+00:00) and cleared it.
+[2025-10-15T13:03:49.212541+00:00] Received code: 511710
+[2025-10-15T13:03:53.497181+00:00] Sent code: 511710 (was received at 2025-10-15T13:03:49.212541+00:00) and cleared it.
+[2025-10-15T13:04:00.065850+00:00] Received code: 215063
+[2025-10-15T13:04:05.682742+00:00] Sent code: 215063 (was received at 2025-10-15T13:04:00.065850+00:00) and cleared it.
+[2025-10-16T12:58:41.750451+00:00] Received code: 221726
+[2025-10-16T12:58:47.659649+00:00] Sent code: 221726 (was received at 2025-10-16T12:58:41.750451+00:00) and cleared it.
+[2025-10-16T12:58:55.269440+00:00] Received code: 799252
+[2025-10-16T12:58:59.830463+00:00] Sent code: 799252 (was received at 2025-10-16T12:58:55.269440+00:00) and cleared it.
+[2025-10-16T13:55:15.718092+00:00] Received code: 312896
+[2025-10-16T13:55:18.646618+00:00] Sent code: 312896 (was received at 2025-10-16T13:55:15.718092+00:00) and cleared it.
+[2025-10-17T13:06:47.153763+00:00] Received code: 316554
+[2025-10-17T13:06:50.257422+00:00] Sent code: 316554 (was received at 2025-10-17T13:06:47.153763+00:00) and cleared it.
+[2025-10-17T13:06:56.517327+00:00] Received code: 615213
+[2025-10-17T13:07:04.764406+00:00] Sent code: 615213 (was received at 2025-10-17T13:06:56.517327+00:00) and cleared it.
+[2025-10-20T14:56:07.904675+00:00] Received code: 545292
+[2025-10-20T14:56:09.459277+00:00] Sent code: 545292 (was received at 2025-10-20T14:56:07.904675+00:00) and cleared it.
+[2025-10-20T14:56:16.928130+00:00] Received code: 524980
+[2025-10-20T14:56:19.298321+00:00] Sent code: 524980 (was received at 2025-10-20T14:56:16.928130+00:00) and cleared it.
+[2025-10-21T13:06:40.087738+00:00] Received code: 549712
+[2025-10-21T13:06:45.570389+00:00] Sent code: 549712 (was received at 2025-10-21T13:06:40.087738+00:00) and cleared it.
+[2025-10-21T13:06:55.563502+00:00] Received code: 549403
+[2025-10-21T13:07:00.154867+00:00] Sent code: 549403 (was received at 2025-10-21T13:06:55.563502+00:00) and cleared it.
+[2025-10-22T13:02:34.516719+00:00] Received code: 514413
+[2025-10-22T13:02:41.956219+00:00] Sent code: 514413 (was received at 2025-10-22T13:02:34.516719+00:00) and cleared it.
+[2025-10-22T13:02:49.854513+00:00] Received code: 144718
+[2025-10-22T13:02:56.048047+00:00] Sent code: 144718 (was received at 2025-10-22T13:02:49.854513+00:00) and cleared it.
+[2025-10-22T19:53:13.168409+00:00] Received code: 178358
+[2025-10-22T19:53:56.846305+00:00] Received code: 307690
+[2025-10-23T13:04:35.373897+00:00] Received code: 640288
+[2025-10-23T13:04:40.890250+00:00] Sent code: 640288 (was received at 2025-10-23T13:04:35.373897+00:00) and cleared it.
+[2025-10-23T13:04:47.444794+00:00] Received code: 180613
+[2025-10-23T13:04:53.081021+00:00] Sent code: 180613 (was received at 2025-10-23T13:04:47.444794+00:00) and cleared it.
+[2025-10-24T13:12:08.233730+00:00] Received code: 258424
+[2025-10-24T13:12:18.582206+00:00] Sent code: 258424 (was received at 2025-10-24T13:12:08.233730+00:00) and cleared it.
+[2025-10-24T13:12:26.000670+00:00] Received code: 198767
+[2025-10-24T13:12:36.878152+00:00] Sent code: 198767 (was received at 2025-10-24T13:12:26.000670+00:00) and cleared it.
+[2025-10-24T18:53:47.056269+00:00] Received code: 575600
+[2025-10-24T18:53:55.449091+00:00] Sent code: 575600 (was received at 2025-10-24T18:53:47.056269+00:00) and cleared it.
+[2025-10-27T13:06:16.471123+00:00] Received code: 208953
+[2025-10-27T13:06:25.184762+00:00] Sent code: 208953 (was received at 2025-10-27T13:06:16.471123+00:00) and cleared it.
+[2025-10-27T13:06:32.067588+00:00] Received code: 515474
+[2025-10-27T13:06:40.653319+00:00] Sent code: 515474 (was received at 2025-10-27T13:06:32.067588+00:00) and cleared it.
+[2025-10-28T13:13:50.854117+00:00] Received code: 165305
+[2025-10-28T13:13:56.489029+00:00] Sent code: 165305 (was received at 2025-10-28T13:13:50.854117+00:00) and cleared it.
+[2025-10-28T13:14:03.062939+00:00] Received code: 622450
+[2025-10-28T13:14:09.102100+00:00] Sent code: 622450 (was received at 2025-10-28T13:14:03.062939+00:00) and cleared it.
+[2025-10-29T13:20:30.199726+00:00] Received code: 584748
+[2025-10-29T13:21:02.485776+00:00] Sent code: 584748 (was received at 2025-10-29T13:20:30.199726+00:00) and cleared it.
+[2025-10-29T14:56:05.775677+00:00] Received code: 350021
+[2025-10-29T14:56:32.680655+00:00] Sent code: 350021 (was received at 2025-10-29T14:56:05.775677+00:00) and cleared it.
+[2025-10-29T17:24:12.333312+00:00] Received code: 278223
+[2025-10-29T17:24:14.961213+00:00] Sent code: 278223 (was received at 2025-10-29T17:24:12.333312+00:00) and cleared it.
+[2025-10-30T13:28:37.734362+00:00] Received code: 420404
+[2025-10-30T13:28:41.022466+00:00] Sent code: 420404 (was received at 2025-10-30T13:28:37.734362+00:00) and cleared it.
+[2025-10-30T13:28:49.514127+00:00] Received code: 321805
+[2025-10-30T13:28:54.220046+00:00] Sent code: 321805 (was received at 2025-10-30T13:28:49.514127+00:00) and cleared it.
+[2025-10-31T15:44:01.761255+00:00] Received code: 572708
+[2025-10-31T15:44:09.957776+00:00] Sent code: 572708 (was received at 2025-10-31T15:44:01.761255+00:00) and cleared it.
+[2025-10-31T15:44:16.431074+00:00] Received code: 171872
+[2025-10-31T15:44:34.446804+00:00] Sent code: 171872 (was received at 2025-10-31T15:44:16.431074+00:00) and cleared it.
+[2025-11-02 11:19:21 -0500] [3906406] [INFO] Booting worker with pid: 3906406
+[2025-11-07 00:37:17 -0500] [3906406] [WARNING] Invalid request from ip=162.142.125.199: Invalid HTTP Version: (2, 0)
+[2025-11-08 01:07:30 -0500] [3906406] [WARNING] Invalid request from ip=206.168.34.217: Invalid HTTP Version: (2, 0)
+[2025-11-09 02:09:20 -0500] [3906406] [WARNING] Invalid request from ip=66.132.153.135: Invalid HTTP Version: (2, 0)
+[2025-11-10 05:30:42 -0500] [2862501] [CRITICAL] WORKER TIMEOUT (pid:3906406)
+[2025-11-10 05:30:42 -0500] [3906406] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-11-10 05:30:42 -0500] [3906406] [INFO] Worker exiting (pid: 3906406)
+[2025-11-03T13:32:24.389233+00:00] Received code: 528496
+[2025-11-03T13:32:30.419843+00:00] Sent code: 528496 (was received at 2025-11-03T13:32:24.389233+00:00) and cleared it.
+[2025-11-03T13:32:36.909595+00:00] Received code: 988462
+[2025-11-03T13:32:44.609191+00:00] Sent code: 988462 (was received at 2025-11-03T13:32:36.909595+00:00) and cleared it.
+[2025-11-04T14:00:30.164758+00:00] Received code: 609298
+[2025-11-04T14:00:44.674539+00:00] Sent code: 609298 (was received at 2025-11-04T14:00:30.164758+00:00) and cleared it.
+[2025-11-04T14:00:51.618574+00:00] Received code: 138598
+[2025-11-04T14:00:59.421113+00:00] Sent code: 138598 (was received at 2025-11-04T14:00:51.618574+00:00) and cleared it.
+[2025-11-05T13:56:01.608583+00:00] Received code: 396720
+[2025-11-05T13:56:08.157411+00:00] Sent code: 396720 (was received at 2025-11-05T13:56:01.608583+00:00) and cleared it.
+[2025-11-06T14:04:54.526950+00:00] Received code: 367102
+[2025-11-06T14:05:05.797976+00:00] Sent code: 367102 (was received at 2025-11-06T14:04:54.526950+00:00) and cleared it.
+[2025-11-06T14:05:13.198378+00:00] Received code: 548560
+[2025-11-06T14:05:19.100630+00:00] Sent code: 548560 (was received at 2025-11-06T14:05:13.198378+00:00) and cleared it.
+[2025-11-07T14:04:20.450914+00:00] Received code: 644080
+[2025-11-07T14:04:34.704672+00:00] Sent code: 644080 (was received at 2025-11-07T14:04:20.450914+00:00) and cleared it.
+[2025-11-07T14:04:40.647403+00:00] Received code: 613387
+[2025-11-07T14:04:53.711829+00:00] Sent code: 613387 (was received at 2025-11-07T14:04:40.647403+00:00) and cleared it.
+[2025-11-10 05:30:42 -0500] [363093] [INFO] Booting worker with pid: 363093
+[2025-11-10 05:31:47 -0500] [363093] [WARNING] Invalid request from ip=162.142.125.205: Invalid HTTP Version: (2, 0)
+[2025-11-11 04:30:39 -0500] [363093] [WARNING] Invalid request from ip=162.142.125.122: Invalid HTTP Version: (2, 0)
+[2025-11-12 09:08:41 -0500] [363093] [WARNING] Invalid request from ip=162.142.125.214: Invalid HTTP Version: (2, 0)
+[2025-11-13 09:56:55 -0500] [363093] [WARNING] Invalid request from ip=206.168.34.60: Invalid HTTP Version: (2, 0)
+[2025-11-14 10:55:55 -0500] [363093] [WARNING] Invalid request from ip=206.168.34.38: Invalid HTTP Version: (2, 0)
+[2025-11-15 11:59:47 -0500] [2862501] [CRITICAL] WORKER TIMEOUT (pid:363093)
+[2025-11-15 11:59:47 -0500] [363093] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-11-15 11:59:47 -0500] [363093] [INFO] Worker exiting (pid: 363093)
+[2025-11-10T14:01:42.281664+00:00] Received code: 615509
+[2025-11-10T14:01:54.827194+00:00] Sent code: 615509 (was received at 2025-11-10T14:01:42.281664+00:00) and cleared it.
+[2025-11-10T14:02:02.148020+00:00] Received code: 646354
+[2025-11-10T14:02:08.770573+00:00] Sent code: 646354 (was received at 2025-11-10T14:02:02.148020+00:00) and cleared it.
+[2025-11-11T14:00:19.373351+00:00] Received code: 712957
+[2025-11-11T14:01:05.692295+00:00] Received code: 190109
+[2025-11-11T14:01:12.844931+00:00] Sent code: 190109 (was received at 2025-11-11T14:01:05.692295+00:00) and cleared it.
+[2025-11-12T14:22:54.934685+00:00] Received code: 264975
+[2025-11-12T14:22:59.269061+00:00] Sent code: 264975 (was received at 2025-11-12T14:22:54.934685+00:00) and cleared it.
+[2025-11-12T14:23:06.552665+00:00] Received code: 479381
+[2025-11-12T14:23:14.276943+00:00] Sent code: 479381 (was received at 2025-11-12T14:23:06.552665+00:00) and cleared it.
+[2025-11-13T14:35:05.115165+00:00] Received code: 627324
+[2025-11-13T14:35:33.983242+00:00] Received code: 947039
+[2025-11-14T14:08:36.824799+00:00] Received code: 419641
+[2025-11-14T14:08:43.108735+00:00] Sent code: 419641 (was received at 2025-11-14T14:08:36.824799+00:00) and cleared it.
+[2025-11-14T14:08:49.731561+00:00] Received code: 233326
+[2025-11-14T14:08:55.502401+00:00] Sent code: 233326 (was received at 2025-11-14T14:08:49.731561+00:00) and cleared it.
+[2025-11-15 11:59:48 -0500] [794512] [INFO] Booting worker with pid: 794512
+[2025-11-15 12:00:27 -0500] [794512] [WARNING] Invalid request from ip=162.142.125.123: Invalid HTTP Version: (2, 0)
+[2025-11-16 15:12:41 -0500] [794512] [WARNING] Invalid request from ip=167.94.138.187: Invalid HTTP Version: (2, 0)
+[2025-11-16 15:14:21 -0500] [2862501] [CRITICAL] WORKER TIMEOUT (pid:794512)
+[2025-11-16 15:14:21 -0500] [794512] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-11-16 15:14:21 -0500] [794512] [INFO] Worker exiting (pid: 794512)
+[2025-11-16 15:14:21 -0500] [889145] [INFO] Booting worker with pid: 889145
+[2025-11-17 16:36:38 -0500] [889145] [WARNING] Invalid request from ip=167.94.138.189: Invalid HTTP Version: (2, 0)
+[2025-11-18 17:13:20 -0500] [2862501] [CRITICAL] WORKER TIMEOUT (pid:889145)
+[2025-11-18 17:13:20 -0500] [889145] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-11-18 17:13:20 -0500] [889145] [INFO] Worker exiting (pid: 889145)
+[2025-11-17T14:02:48.798706+00:00] Received code: 430297
+[2025-11-17T14:22:11.108772+00:00] Received code: 673682
+[2025-11-17T14:22:14.401715+00:00] Sent code: 673682 (was received at 2025-11-17T14:22:11.108772+00:00) and cleared it.
+[2025-11-17T18:59:28.801390+00:00] Received code: 732078
+[2025-11-17T18:59:35.096457+00:00] Sent code: 732078 (was received at 2025-11-17T18:59:28.801390+00:00) and cleared it.
+[2025-11-18T13:58:57.970687+00:00] Received code: 619300
+[2025-11-18T13:59:03.772712+00:00] Sent code: 619300 (was received at 2025-11-18T13:58:57.970687+00:00) and cleared it.
+[2025-11-18T18:48:06.236131+00:00] Received code: 220761
+[2025-11-18T18:48:09.751193+00:00] Sent code: 220761 (was received at 2025-11-18T18:48:06.236131+00:00) and cleared it.
+[2025-11-18T18:48:16.284509+00:00] Received code: 600178
+[2025-11-18T18:48:18.972734+00:00] Sent code: 600178 (was received at 2025-11-18T18:48:16.284509+00:00) and cleared it.
+[2025-11-18 17:13:20 -0500] [1065610] [INFO] Booting worker with pid: 1065610
+[2025-11-18 17:14:50 -0500] [1065610] [WARNING] Invalid request from ip=167.94.138.186: Invalid HTTP Version: (2, 0)
+[2025-11-19 18:06:08 -0500] [1065610] [WARNING] Invalid request from ip=162.142.125.209: Invalid HTTP Version: (2, 0)
+[2025-11-20 00:52:06 -0500] [1065610] [WARNING] Invalid request from ip=167.94.146.57: Invalid HTTP Version: (2, 0)
+[2025-11-21 01:56:41 -0500] [2862501] [CRITICAL] WORKER TIMEOUT (pid:1065610)
+[2025-11-21 01:56:41 -0500] [1065610] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-11-21 01:56:41 -0500] [1065610] [INFO] Worker exiting (pid: 1065610)
+[2025-11-19T14:17:58.384129+00:00] Received code: 660747
+[2025-11-19T14:18:05.823638+00:00] Sent code: 660747 (was received at 2025-11-19T14:17:58.384129+00:00) and cleared it.
+[2025-11-19T14:18:13.369866+00:00] Received code: 408400
+[2025-11-19T14:18:17.318417+00:00] Sent code: 408400 (was received at 2025-11-19T14:18:13.369866+00:00) and cleared it.
+[2025-11-20T12:01:58.204561+00:00] Received code: 472496
+[2025-11-20T12:02:04.218061+00:00] Sent code: 472496 (was received at 2025-11-20T12:01:58.204561+00:00) and cleared it.
+[2025-11-21 01:56:41 -0500] [1265665] [INFO] Booting worker with pid: 1265665
+[2025-11-21 01:57:13 -0500] [1265665] [WARNING] Invalid request from ip=162.142.125.127: Invalid HTTP Version: (2, 0)
+[2025-11-22 02:59:11 -0500] [1265665] [WARNING] Invalid request from ip=162.142.125.221: Invalid HTTP Version: (2, 0)
+[2025-11-22 12:09:28 -0500] [2862501] [CRITICAL] WORKER TIMEOUT (pid:1265665)
+[2025-11-22 12:09:28 -0500] [1265665] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-11-22 12:09:28 -0500] [1265665] [INFO] Worker exiting (pid: 1265665)
+[2025-11-21T14:06:03.182239+00:00] Received code: 560732
+[2025-11-21T14:06:13.469058+00:00] Sent code: 560732 (was received at 2025-11-21T14:06:03.182239+00:00) and cleared it.
+[2025-11-21T14:06:36.701855+00:00] Received code: 540945
+[2025-11-22 12:09:28 -0500] [1387708] [INFO] Booting worker with pid: 1387708
+[2025-11-23 03:57:37 -0500] [1387708] [WARNING] Invalid request from ip=162.142.125.112: Invalid HTTP Version: (2, 0)
+[2025-11-24 04:58:12 -0500] [2862501] [CRITICAL] WORKER TIMEOUT (pid:1387708)
+[2025-11-24 04:58:12 -0500] [1387708] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-11-24 04:58:12 -0500] [1387708] [INFO] Worker exiting (pid: 1387708)
+[2025-11-23T23:07:41.068850+00:00] Received code: 498268
+[2025-11-23T23:07:41.694777+00:00] Sent code: 498268 (was received at 2025-11-23T23:07:41.068850+00:00) and cleared it.
+[2025-11-23T23:07:52.449644+00:00] Received code: 672627
+[2025-11-23T23:07:57.067635+00:00] Sent code: 672627 (was received at 2025-11-23T23:07:52.449644+00:00) and cleared it.
+[2025-11-24 04:58:12 -0500] [1531749] [INFO] Booting worker with pid: 1531749
+[2025-11-24 04:58:58 -0500] [2862501] [CRITICAL] WORKER TIMEOUT (pid:1531749)
+[2025-11-24 04:58:58 -0500] [1531749] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-11-24 04:58:58 -0500] [1531749] [INFO] Worker exiting (pid: 1531749)
+[2025-11-24 04:58:59 -0500] [1531791] [INFO] Booting worker with pid: 1531791
+[2025-11-24 04:59:03 -0500] [1531791] [WARNING] Invalid request from ip=162.142.125.47: Invalid HTTP Version: (2, 0)
+[2025-11-24 05:01:08 -0500] [2862501] [CRITICAL] WORKER TIMEOUT (pid:1531791)
+[2025-11-24 05:01:08 -0500] [1531791] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-11-24 05:01:08 -0500] [1531791] [INFO] Worker exiting (pid: 1531791)
+[2025-11-24 05:01:08 -0500] [1532016] [INFO] Booting worker with pid: 1532016
+[2025-11-25 05:57:47 -0500] [1532016] [WARNING] Invalid request from ip=162.142.125.213: Invalid HTTP Version: (2, 0)
+[2025-11-26 06:57:20 -0500] [1532016] [WARNING] Invalid request from ip=167.94.138.202: Invalid HTTP Version: (2, 0)
+[2025-11-27 07:58:58 -0500] [2862501] [CRITICAL] WORKER TIMEOUT (pid:1532016)
+[2025-11-27 07:58:58 -0500] [1532016] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-11-27 07:58:58 -0500] [1532016] [INFO] Worker exiting (pid: 1532016)
+[2025-11-27 07:58:58 -0500] [1795066] [INFO] Booting worker with pid: 1795066
+[2025-11-27 07:59:02 -0500] [1795066] [WARNING] Invalid request from ip=167.94.138.52: Invalid HTTP Version: (2, 0)
+[2025-11-27 08:01:31 -0500] [2862501] [CRITICAL] WORKER TIMEOUT (pid:1795066)
+[2025-11-27 08:01:31 -0500] [1795066] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-11-27 08:01:31 -0500] [1795066] [INFO] Worker exiting (pid: 1795066)
+[2025-11-27 08:01:31 -0500] [1795273] [INFO] Booting worker with pid: 1795273
+[2025-11-28 02:38:04 -0500] [1795273] [WARNING] Invalid request from ip=199.45.155.79: Invalid HTTP Version: (2, 0)
+[2025-11-28 16:55:43 -0500] [2862501] [CRITICAL] WORKER TIMEOUT (pid:1795273)
+[2025-11-28 16:55:43 -0500] [1795273] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-11-28 16:55:43 -0500] [1795273] [INFO] Worker exiting (pid: 1795273)
+[2025-11-28 16:55:43 -0500] [1912905] [INFO] Booting worker with pid: 1912905
+[2025-11-29 02:59:08 -0500] [1912905] [WARNING] Invalid request from ip=66.132.153.116: Invalid HTTP Version: (2, 0)
+[2025-11-30 03:58:56 -0500] [1912905] [WARNING] Invalid request from ip=66.132.153.113: Invalid HTTP Version: (2, 0)
+[2025-12-01 04:59:10 -0500] [1912905] [WARNING] Invalid request from ip=66.132.153.119: Invalid HTTP Version: (2, 0)
+[2025-12-02 06:00:04 -0500] [1912905] [WARNING] Invalid request from ip=162.142.125.33: Invalid HTTP Version: (2, 0)
+[2025-12-03 02:14:25 -0500] [1912905] [WARNING] Invalid request from ip=199.45.154.116: Invalid HTTP Version: (2, 0)
+[2025-12-04 02:27:04 -0500] [1912905] [WARNING] Invalid request from ip=167.94.138.44: Invalid HTTP Version: (2, 0)
+[2025-12-04 02:27:40 -0500] [2862501] [CRITICAL] WORKER TIMEOUT (pid:1912905)
+[2025-12-04 02:27:40 -0500] [1912905] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-12-04 02:27:40 -0500] [1912905] [INFO] Worker exiting (pid: 1912905)
+[2025-12-01T14:07:16.515488+00:00] Received code: 317571
+[2025-12-01T14:07:21.937939+00:00] Sent code: 317571 (was received at 2025-12-01T14:07:16.515488+00:00) and cleared it.
+[2025-12-01T14:07:29.477147+00:00] Received code: 682481
+[2025-12-01T18:50:29.098046+00:00] Received code: 939641
+[2025-12-01T18:50:36.432865+00:00] Sent code: 939641 (was received at 2025-12-01T18:50:29.098046+00:00) and cleared it.
+[2025-12-02T13:59:29.354329+00:00] Received code: 281682
+[2025-12-02T13:59:31.024700+00:00] Sent code: 281682 (was received at 2025-12-02T13:59:29.354329+00:00) and cleared it.
+[2025-12-02T19:38:33.998662+00:00] Received code: 871271
+[2025-12-02T19:38:48.648646+00:00] Sent code: 871271 (was received at 2025-12-02T19:38:33.998662+00:00) and cleared it.
+[2025-12-03T14:28:33.551193+00:00] Received code: 714100
+[2025-12-03T14:28:51.214431+00:00] Received code: 474121
+[2025-12-04 02:27:40 -0500] [2389152] [INFO] Booting worker with pid: 2389152
+[2025-12-04 02:58:09 -0500] [2389152] [WARNING] Invalid request from ip=162.142.125.222: Invalid HTTP Version: (2, 0)
+[2025-12-05 03:57:13 -0500] [2389152] [WARNING] Invalid request from ip=167.94.138.183: Invalid HTTP Version: (2, 0)
+[2025-12-06 02:15:11 -0500] [2389152] [WARNING] Invalid request from ip=167.94.138.183: Invalid HTTP Version: (2, 0)
+[2025-12-07 02:59:46 -0500] [2389152] [WARNING] Invalid request from ip=167.94.138.182: Invalid HTTP Version: (2, 0)
+[2025-12-08 04:04:28 -0500] [2389152] [WARNING] Invalid request from ip=167.94.138.45: Invalid HTTP Version: (2, 0)
+[2025-12-09 05:00:37 -0500] [2862501] [CRITICAL] WORKER TIMEOUT (pid:2389152)
+[2025-12-09 05:00:37 -0500] [2389152] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-12-09 05:00:37 -0500] [2389152] [INFO] Worker exiting (pid: 2389152)
+[2025-12-04T14:04:33.300832+00:00] Received code: 407531
+[2025-12-04T14:04:43.861900+00:00] Sent code: 407531 (was received at 2025-12-04T14:04:33.300832+00:00) and cleared it.
+[2025-12-04T14:04:50.540583+00:00] Received code: 656541
+[2025-12-04T14:04:54.525626+00:00] Sent code: 656541 (was received at 2025-12-04T14:04:50.540583+00:00) and cleared it.
+[2025-12-05T14:26:27.999488+00:00] Received code: 373667
+[2025-12-05T14:26:37.114243+00:00] Sent code: 373667 (was received at 2025-12-05T14:26:27.999488+00:00) and cleared it.
+[2025-12-08T14:22:39.712092+00:00] Received code: 119612
+[2025-12-08T14:22:45.554205+00:00] Sent code: 119612 (was received at 2025-12-08T14:22:39.712092+00:00) and cleared it.
+[2025-12-08T14:22:52.634897+00:00] Received code: 332922
+[2025-12-08T14:22:58.078577+00:00] Sent code: 332922 (was received at 2025-12-08T14:22:52.634897+00:00) and cleared it.
+[2025-12-08T16:41:12.718906+00:00] Received code: 316659
+[2025-12-08T18:25:05.191251+00:00] Received code: 428979
+[2025-12-08T18:25:08.146346+00:00] Sent code: 428979 (was received at 2025-12-08T18:25:05.191251+00:00) and cleared it.
+[2025-12-09 05:00:37 -0500] [2843358] [INFO] Booting worker with pid: 2843358
+[2025-12-09 05:00:39 -0500] [2843358] [WARNING] Invalid request from ip=167.94.138.198: Invalid HTTP Version: (2, 0)
+[2025-12-09 05:01:21 -0500] [2862501] [CRITICAL] WORKER TIMEOUT (pid:2843358)
+[2025-12-09 05:01:21 -0500] [2843358] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-12-09 05:01:21 -0500] [2843358] [INFO] Worker exiting (pid: 2843358)
+[2025-12-09 05:01:21 -0500] [2843390] [INFO] Booting worker with pid: 2843390
+[2025-12-10 02:30:12 -0500] [2843390] [WARNING] Invalid request from ip=167.94.138.200: Invalid HTTP Version: (2, 0)
+[2025-12-11 02:22:26 -0500] [2843390] [WARNING] Invalid request from ip=162.142.125.205: Invalid HTTP Version: (2, 0)
+[2025-12-11 02:57:40 -0500] [2862501] [CRITICAL] WORKER TIMEOUT (pid:2843390)
+[2025-12-11 02:57:40 -0500] [2843390] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-12-11 02:57:40 -0500] [2843390] [INFO] Worker exiting (pid: 2843390)
+[2025-12-09T13:59:43.140584+00:00] Received code: 545357
+[2025-12-09T13:59:44.975407+00:00] Received code: 517450
+[2025-12-09T13:59:47.038769+00:00] Sent code: 517450 (was received at 2025-12-09T13:59:44.975407+00:00) and cleared it.
+[2025-12-09T19:57:34.732596+00:00] Received code: 993923
+[2025-12-09T19:57:39.611341+00:00] Sent code: 993923 (was received at 2025-12-09T19:57:34.732596+00:00) and cleared it.
+[2025-12-09T19:57:45.868313+00:00] Received code: 193325
+[2025-12-09T19:57:50.102518+00:00] Sent code: 193325 (was received at 2025-12-09T19:57:45.868313+00:00) and cleared it.
+[2025-12-10T14:22:21.184679+00:00] Received code: 595741
+[2025-12-10T14:22:26.665677+00:00] Sent code: 595741 (was received at 2025-12-10T14:22:21.184679+00:00) and cleared it.
+[2025-12-11 02:57:40 -0500] [3056182] [INFO] Booting worker with pid: 3056182
+[2025-12-11 02:58:09 -0500] [3056182] [WARNING] Invalid request from ip=162.142.125.126: Invalid HTTP Version: (2, 0)
+[2025-12-11 03:00:57 -0500] [3056182] [WARNING] Invalid request from ip=66.132.153.118: Invalid HTTP Version: (2, 0)
+[2025-12-12 03:53:24 -0500] [3056182] [WARNING] Invalid request from ip=66.132.153.119: Invalid HTTP Version: (2, 0)
+[2025-12-12 04:00:36 -0500] [3056182] [WARNING] Invalid request from ip=162.142.125.223: Invalid HTTP Version: (2, 0)
+[2025-12-13 04:59:29 -0500] [3056182] [WARNING] Invalid request from ip=167.94.138.205: Invalid HTTP Version: (2, 0)
+[2025-12-14 05:56:59 -0500] [3056182] [WARNING] Invalid request from ip=167.94.138.195: Invalid HTTP Version: (2, 0)
+[2025-12-14 05:58:14 -0500] [2862501] [CRITICAL] WORKER TIMEOUT (pid:3056182)
+[2025-12-14 05:58:14 -0500] [3056182] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-12-14 05:58:14 -0500] [3056182] [INFO] Worker exiting (pid: 3056182)
+[2025-12-11T14:16:27.922917+00:00] Received code: 111990
+[2025-12-11T14:16:52.655224+00:00] Received code: 238112
+[2025-12-12T14:07:04.981339+00:00] Received code: 560351
+[2025-12-12T14:07:09.383616+00:00] Sent code: 560351 (was received at 2025-12-12T14:07:04.981339+00:00) and cleared it.
+[2025-12-12T14:07:16.957898+00:00] Received code: 686805
+[2025-12-12T14:07:20.534727+00:00] Sent code: 686805 (was received at 2025-12-12T14:07:16.957898+00:00) and cleared it.
+[2025-12-12T21:59:00.770285+00:00] Received code: 498840
+[2025-12-12T21:59:13.436580+00:00] Received code: 640203
+[2025-12-13T18:29:08.714862+00:00] Received code: 519566
+[2025-12-13T18:29:16.397918+00:00] Sent code: 519566 (was received at 2025-12-13T18:29:08.714862+00:00) and cleared it.
+[2025-12-14 05:58:15 -0500] [3387234] [INFO] Booting worker with pid: 3387234
+[2025-12-15 06:58:46 -0500] [2862501] [CRITICAL] WORKER TIMEOUT (pid:3387234)
+[2025-12-15 06:58:46 -0500] [3387234] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-12-15 06:58:46 -0500] [3387234] [INFO] Worker exiting (pid: 3387234)
+[2025-12-15T06:50:59.256141+00:00] Received code: 621823
+[2025-12-15T06:51:14.565423+00:00] Received code: 657795
+[2025-12-15 06:58:46 -0500] [3487241] [INFO] Booting worker with pid: 3487241
+[2025-12-15 06:59:31 -0500] [2862501] [CRITICAL] WORKER TIMEOUT (pid:3487241)
+[2025-12-15 06:59:31 -0500] [3487241] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-12-15 06:59:31 -0500] [3487241] [INFO] Worker exiting (pid: 3487241)
+[2025-12-15 06:59:31 -0500] [3487283] [INFO] Booting worker with pid: 3487283
+[2025-12-15 07:00:29 -0500] [3487283] [WARNING] Invalid request from ip=206.168.34.46: Invalid HTTP Version: (2, 0)
+[2025-12-16 08:02:16 -0500] [3487283] [WARNING] Invalid request from ip=162.142.125.38: Invalid HTTP Version: (2, 0)
+[2025-12-16 08:04:16 -0500] [2862501] [CRITICAL] WORKER TIMEOUT (pid:3487283)
+[2025-12-16 08:04:16 -0500] [3487283] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-12-16 08:04:16 -0500] [3487283] [INFO] Worker exiting (pid: 3487283)
+[2025-12-15T14:05:07.365543+00:00] Received code: 140475
+[2025-12-15T14:05:32.993379+00:00] Received code: 843730
+[2025-12-16 08:04:16 -0500] [3585500] [INFO] Booting worker with pid: 3585500
+[2025-12-17 09:03:43 -0500] [2862501] [CRITICAL] WORKER TIMEOUT (pid:3585500)
+[2025-12-17 09:03:43 -0500] [3585500] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-12-17 09:03:43 -0500] [3585500] [INFO] Worker exiting (pid: 3585500)
+[2025-12-16T14:00:10.006396+00:00] Received code: 925885
+[2025-12-16T20:17:36.804046+00:00] Received code: 241425
+[2025-12-16T20:17:40.347634+00:00] Sent code: 241425 (was received at 2025-12-16T20:17:36.804046+00:00) and cleared it.
+[2025-12-16T20:17:46.077452+00:00] Received code: 423578
+[2025-12-16T20:17:49.973837+00:00] Sent code: 423578 (was received at 2025-12-16T20:17:46.077452+00:00) and cleared it.
+[2025-12-17T13:55:19.109376+00:00] Received code: 306504
+[2025-12-17T13:55:41.517219+00:00] Received code: 432098
+[2025-12-17 09:03:43 -0500] [3682906] [INFO] Booting worker with pid: 3682906
+[2025-12-17 09:04:11 -0500] [3682906] [WARNING] Invalid request from ip=66.132.153.141: Invalid HTTP Version: (2, 0)
+[2025-12-18 10:03:07 -0500] [2862501] [CRITICAL] WORKER TIMEOUT (pid:3682906)
+[2025-12-18 10:03:07 -0500] [3682906] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-12-18 10:03:07 -0500] [3682906] [INFO] Worker exiting (pid: 3682906)
+[2025-12-17T14:52:12.768363+00:00] Received code: 677606
+[2025-12-17T14:52:16.719552+00:00] Sent code: 677606 (was received at 2025-12-17T14:52:12.768363+00:00) and cleared it.
+[2025-12-17T17:18:20.530393+00:00] Received code: 213137
+[2025-12-17T18:19:59.088976+00:00] Received code: 505434
+[2025-12-17T18:20:06.489125+00:00] Sent code: 505434 (was received at 2025-12-17T18:19:59.088976+00:00) and cleared it.
+[2025-12-17T19:01:36.766237+00:00] Received code: 401162
+[2025-12-17T19:11:06.286748+00:00] Received code: 640282
+[2025-12-17T19:11:10.160892+00:00] Sent code: 640282 (was received at 2025-12-17T19:11:06.286748+00:00) and cleared it.
+[2025-12-17T19:57:07.778192+00:00] Received code: 322521
+[2025-12-17T19:57:20.193757+00:00] Sent code: 322521 (was received at 2025-12-17T19:57:07.778192+00:00) and cleared it.
+[2025-12-18T14:00:26.300907+00:00] Received code: 363538
+[2025-12-18T14:00:29.690530+00:00] Sent code: 363538 (was received at 2025-12-18T14:00:26.300907+00:00) and cleared it.
+[2025-12-18T14:00:36.029027+00:00] Received code: 430555
+[2025-12-18T14:00:41.619292+00:00] Sent code: 430555 (was received at 2025-12-18T14:00:36.029027+00:00) and cleared it.
+[2025-12-18 10:03:07 -0500] [3781279] [INFO] Booting worker with pid: 3781279
+[2025-12-18 10:03:49 -0500] [2862501] [CRITICAL] WORKER TIMEOUT (pid:3781279)
+[2025-12-18 10:03:49 -0500] [3781279] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-12-18 10:03:49 -0500] [3781279] [INFO] Worker exiting (pid: 3781279)
+[2025-12-18 10:03:49 -0500] [3781315] [INFO] Booting worker with pid: 3781315
+[2025-12-18 10:03:53 -0500] [3781315] [WARNING] Invalid request from ip=167.94.138.60: Invalid HTTP Version: (2, 0)
+[2025-12-18 10:05:47 -0500] [2862501] [CRITICAL] WORKER TIMEOUT (pid:3781315)
+[2025-12-18 10:05:47 -0500] [3781315] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-12-18 10:05:47 -0500] [3781315] [INFO] Worker exiting (pid: 3781315)
+[2025-12-18 10:05:47 -0500] [3781436] [INFO] Booting worker with pid: 3781436
+[2025-12-19 10:57:09 -0500] [2862501] [CRITICAL] WORKER TIMEOUT (pid:3781436)
+[2025-12-19 10:57:09 -0500] [3781436] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-12-19 10:57:09 -0500] [3781436] [INFO] Worker exiting (pid: 3781436)
+[2025-12-19 10:57:10 -0500] [3904603] [INFO] Booting worker with pid: 3904603
+[2025-12-19 10:57:15 -0500] [3904603] [WARNING] Invalid request from ip=167.94.138.53: Invalid HTTP Version: (2, 0)
+[2025-12-19 10:59:31 -0500] [2862501] [CRITICAL] WORKER TIMEOUT (pid:3904603)
+[2025-12-19 10:59:31 -0500] [3904603] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-12-19 10:59:31 -0500] [3904603] [INFO] Worker exiting (pid: 3904603)
+[2025-12-19 10:59:31 -0500] [3904703] [INFO] Booting worker with pid: 3904703
+[2025-12-20 11:56:27 -0500] [3904703] [WARNING] Invalid request from ip=162.142.125.116: Invalid HTTP Version: (2, 0)
+[2025-12-20 11:57:01 -0500] [2862501] [CRITICAL] WORKER TIMEOUT (pid:3904703)
+[2025-12-20 11:57:01 -0500] [3904703] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-12-20 11:57:01 -0500] [3904703] [INFO] Worker exiting (pid: 3904703)
+[2025-12-20 11:57:01 -0500] [4005339] [INFO] Booting worker with pid: 4005339
+[2025-12-21 13:02:07 -0500] [4005339] [WARNING] Invalid request from ip=66.132.153.123: Invalid HTTP Version: (2, 0)
+[2025-12-22 14:04:37 -0500] [4005339] [WARNING] Invalid request from ip=167.94.138.193: Invalid HTTP Version: (2, 0)
+[2025-12-23 15:03:43 -0500] [4005339] [WARNING] Invalid request from ip=66.132.153.127: Invalid HTTP Version: (2, 0)
+[2025-12-24 02:21:05 -0500] [4005339] [WARNING] Invalid request from ip=199.45.154.121: Invalid HTTP Version: (2, 0)
+[2025-12-25 03:01:23 -0500] [2862501] [CRITICAL] WORKER TIMEOUT (pid:4005339)
+[2025-12-25 03:01:23 -0500] [4005339] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-12-25 03:01:23 -0500] [4005339] [INFO] Worker exiting (pid: 4005339)
+[2025-12-25 03:01:23 -0500] [237934] [INFO] Booting worker with pid: 237934
+[2025-12-25 03:01:56 -0500] [237934] [WARNING] Invalid request from ip=167.94.138.187: Invalid HTTP Version: (2, 0)
+[2025-12-26 03:54:58 -0500] [2862501] [CRITICAL] WORKER TIMEOUT (pid:237934)
+[2025-12-26 03:54:58 -0500] [237934] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/auto_2fa/.venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-12-26 03:54:58 -0500] [237934] [INFO] Worker exiting (pid: 237934)
+[2025-12-26 03:54:58 -0500] [341318] [INFO] Booting worker with pid: 341318
+[2025-12-26 03:55:27 -0500] [341318] [WARNING] Invalid request from ip=162.142.125.127: Invalid HTTP Version: (2, 0)
+[2025-12-26 23:20:36 -0500] [341318] [INFO] Worker exiting (pid: 341318)
+[2025-12-26 23:20:36 -0500] [2862501] [INFO] Handling signal: term
+[2025-12-26 23:20:36 -0500] [2862501] [INFO] Shutting down: Master

@@ -1,0 +1,70 @@
+from flask import Flask, request, jsonify
+import datetime
+
+app = Flask(__name__)
+
+# Simple in-memory storage for the latest code.
+# If your Flask app restarts (e.g., server reboot, gunicorn worker restart without shared memory solution),
+# this data will be lost. For more persistence, consider a tiny file, Redis, or a simple SQLite DB
+# if your use case demands it and you run multiple workers.
+latest_code_storage = {
+    "code": None,
+    "received_at": None # UTC timestamp
+}
+
+@app.route('/submit_code', methods=['POST'])
+def submit_code_route():
+    data = request.get_json()
+    if not data or 'code' not in data:
+        return jsonify({"error": "Invalid request: 'code' field missing"}), 400
+    
+    code_value = str(data['code']).strip() # Ensure it's a string and strip whitespace
+    
+    # Basic validation (e.g., codes are usually 4-10 alphanumeric characters)
+    # You can adjust this validation as needed for your specific code format.
+    if not (4 <= len(code_value) <= 10 and code_value.isalnum()):
+        return jsonify({"error": "Invalid code format or length"}), 400
+        
+    current_utc_time = datetime.datetime.now(datetime.timezone.utc)
+    
+    latest_code_storage["code"] = code_value
+    latest_code_storage["received_at"] = current_utc_time
+    
+    print(f"[{current_utc_time.isoformat()}] Received code: {code_value}")
+    return jsonify({
+        "message": "Code received successfully",
+        "code_stored": code_value,
+        "received_at_utc": current_utc_time.isoformat()
+    }), 200
+
+@app.route('/get_code', methods=['GET'])
+def get_code_route():
+    code_to_send = latest_code_storage["code"]
+    time_received_utc = latest_code_storage["received_at"]
+    
+    if code_to_send:
+        # Clear the code after retrieving it to ensure it's only processed once per submission
+        latest_code_storage["code"] = None
+        # Optionally, you could also clear the timestamp or leave it for logging purposes
+        # latest_code_storage["received_at"] = None
+        
+        print(f"[{datetime.datetime.now(datetime.timezone.utc).isoformat()}] Sent code: {code_to_send} (was received at {time_received_utc.isoformat() if time_received_utc else 'N/A'}) and cleared it.")
+        return jsonify({
+            "code": code_to_send,
+            "received_at_utc": time_received_utc.isoformat() if time_received_utc else None
+        }), 200
+    else:
+        return jsonify({"code": None, "message": "No new code available"}), 200 # Return 200 with code:null
+
+if __name__ == '__main__':
+    # This section is for running the Flask development server directly.
+    # For production on your VPS, you should use a WSGI server like Gunicorn.
+    # Example: gunicorn --bind 0.0.0.0:3213 your_script_name:app
+    print("--------------------------------------------------------------------")
+    print("WARNING: Running in Flask development mode on http://0.0.0.0:3213/")
+    print("This server is NOT suitable for production deployment.")
+    print("For production, use a WSGI server like Gunicorn.")
+    print("Example Gunicorn command: gunicorn --workers 1 --bind 0.0.0.0:3213 your_file_name:app")
+    print("Replace 'your_file_name' with the actual name of this Python file.")
+    print("--------------------------------------------------------------------")
+    app.run(debug=True, host='0.0.0.0', port=3213)
